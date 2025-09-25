@@ -1,36 +1,177 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LandingPro - Landing Page Profissional
 
-## Getting Started
+Uma landing page moderna e profissional construída com Next.js 15, TypeScript e Tailwind CSS, seguindo as melhores práticas do mercado.
 
-First, run the development server:
+## 🚀 Tecnologias
+
+- **Next.js 15** - Framework React com App Router
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS v4** - Framework CSS
+- **Framer Motion** - Animações fluidas
+- **Lucide React** - Ícones modernos
+- **React 19** - Última versão do React
+
+## ✨ Características
+
+- ⚡ **Performance Otimizada** - Turbopack habilitado
+- 🎨 **Design System** - Componentes reutilizáveis com CVA
+- 📱 **Responsivo** - Mobile-first design
+- ♿ **Acessibilidade** - Seguindo padrões WCAG
+- 🔧 **TypeScript Rigoroso** - Configuração estrita
+- 🎯 **SEO Otimizado** - Meta tags completas
+- 🌙 **Theme System** - Preparado para modo escuro
+- ⚙️ **Tooling Profissional** - ESLint + Prettier configurados
+
+## 🛠️ Instalação
 
 ```bash
+# Instale as dependências
+npm install
+
+# Execute em desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build para produção
+npm run build
+
+# Execute em produção
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📝 Scripts Disponíveis
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run dev          # Desenvolvimento com Turbopack
+npm run build        # Build otimizado
+npm run start        # Servidor de produção
+npm run lint         # Corrigir problemas de lint
+npm run lint:check   # Verificar problemas de lint
+npm run format       # Formatar código
+npm run typecheck    # Verificar tipos
+npm run check        # Verificação completa
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estrutura do Projeto
 
-## Learn More
+```
+src/
+├── app/                 # App Router (Next.js 15)
+│   ├── globals.css     # Estilos globais
+│   ├── layout.tsx      # Layout principal
+│   └── page.tsx        # Página inicial
+├── components/
+│   ├── layout/         # Componentes de layout
+│   │   ├── Header.tsx  # Cabeçalho
+│   │   └── Footer.tsx  # Rodapé
+│   ├── sections/       # Seções da landing page
+│   │   ├── HeroSection.tsx     # Seção hero
+│   │   └── FeaturesSection.tsx # Seção de recursos
+│   └── ui/             # Componentes UI reutilizáveis
+│       ├── Button.tsx  # Botão com variantes
+│       └── Container.tsx # Container responsivo
+├── lib/
+│   └── utils.ts        # Utilitários
+├── types/
+│   └── index.ts        # Definições de tipos
+└── hooks/              # Hooks customizados
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Sistema de Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O projeto utiliza um design system baseado em:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Color Tokens** - Sistema de cores semânticas
+- **Typography Scale** - Escala tipográfica consistente
+- **Spacing Scale** - Sistema de espaçamento
+- **Component Variants** - Variantes usando CVA
+- **Responsive Design** - Mobile-first approach
 
-## Deploy on Vercel
+## 📱 Seções da Landing Page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 1. Hero Section
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Badge de novidade
+- Título impactante com gradiente
+- Descrição clara do valor
+- CTAs primário e secundário
+- Social proof
+- Vídeo/demo placeholder
+
+### 2. Features Section
+
+- Grid responsivo de recursos
+- Ícones consistentes
+- Animações ao scroll
+- Cards interativos
+
+### 3. Header
+
+- Logo e navegação
+- Menu mobile responsivo
+- CTAs de conversão
+
+### 4. Footer
+
+- Links organizados
+- Redes sociais
+- Informações legais
+- Branding consistente
+
+## 🔧 Configurações
+
+### TypeScript
+
+- Target ES2022
+- Strict mode habilitado
+- Path mapping configurado
+- Verificações rigorosas
+
+### ESLint
+
+- Next.js rules
+- TypeScript integration
+- Accessibility rules
+- React hooks rules
+
+### Prettier
+
+- Tailwind CSS plugin
+- Formatação consistente
+- Single quotes
+- No semicolons
+
+## 🚀 Deploy
+
+O projeto está otimizado para deploy em:
+
+- **Vercel** (recomendado)
+- **Netlify**
+- **AWS Amplify**
+- Qualquer servidor Node.js
+
+## 📊 Performance
+
+- **Core Web Vitals** otimizados
+- **Bundle size** minimizado
+- **Image optimization** automática
+- **Static generation** quando possível
+
+## 🤝 Contribuição
+
+1. Fork o projeto
+2. Crie uma branch: `git checkout -b feature/nova-feature`
+3. Commit: `git commit -m 'Add nova feature'`
+4. Push: `git push origin feature/nova-feature`
+5. Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+## 👨‍💻 Desenvolvido por
+
+LandingPro Team - Especialistas em conversão e performance
+
+---
+
+**Feito com ❤️ e as melhores práticas de desenvolvimento**
