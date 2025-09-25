@@ -49,10 +49,10 @@ export function HeroSection() {
           }}
           transition={{
             duration: 8,
-            ease: "easeInOut",
+            ease: 'easeInOut',
             repeat: Infinity,
           }}
-          className="absolute top-0 right-0 w-full h-full"
+          className="absolute top-0 right-0 h-full w-full"
         >
           <div className="absolute inset-0 bg-gradient-to-bl from-amber-500/5 via-transparent to-transparent" />
         </motion.div>
@@ -65,10 +65,10 @@ export function HeroSection() {
           }}
           transition={{
             duration: 12,
-            ease: "easeInOut",
+            ease: 'easeInOut',
             repeat: Infinity,
           }}
-          className="absolute right-1/4 top-1/3 w-80 h-80 opacity-5"
+          className="absolute top-1/3 right-1/4 h-80 w-80 opacity-5"
         >
           <div className="absolute inset-0 rounded-full border border-emerald-400/20" />
           <div className="absolute inset-4 rounded-full border border-emerald-300/15" />
@@ -78,46 +78,60 @@ export function HeroSection() {
 
       <Container className="relative z-10">
         <div className="flex min-h-screen items-center">
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center w-full pt-32 pb-20">
-
+          <div className="grid w-full items-center gap-8 pt-32 pb-20 md:gap-12 lg:grid-cols-2 lg:gap-20">
             {/* Left Column - Editorial Content */}
             <div className="space-y-8 sm:space-y-12">
-
               {/* Professional Badge */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1.2, ease: "easeOut" }}
+                transition={{ duration: 1.2, ease: 'easeOut' }}
                 className="relative"
               >
-                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500/15 to-amber-500/15 rounded-2xl blur-lg" />
-                <div className="relative bg-black/70 backdrop-blur-xl border border-emerald-500/20 rounded-2xl p-4 sm:p-6 md:p-8">
-                  <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center">
-                      <Award className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-emerald-500/15 to-amber-500/15 blur-lg" />
+                <div className="relative rounded-2xl border border-emerald-500/20 bg-black/70 p-4 backdrop-blur-xl sm:p-6 md:p-8">
+                  <div className="mb-4 flex items-center gap-3 sm:mb-6 sm:gap-4">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 sm:h-12 sm:w-12">
+                      <Award className="h-5 w-5 text-white sm:h-6 sm:w-6" />
                     </div>
                     <div>
-                      <h3 className="text-white font-bold text-base sm:text-lg">Protocolo Validado</h3>
-                      <p className="text-emerald-300 text-xs sm:text-sm">Por especialistas veterinários</p>
+                      <h3 className="text-base font-bold text-white sm:text-lg">
+                        Protocolo Validado
+                      </h3>
+                      <p className="text-xs text-emerald-300 sm:text-sm">
+                        Por especialistas veterinários
+                      </p>
                     </div>
                   </div>
 
                   {/* Results Display */}
                   <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6">
                     <div className="text-center">
-                      <div className="text-emerald-400 text-xl sm:text-2xl md:text-3xl font-black mb-1">75%</div>
-                      <div className="text-white/70 text-xs sm:text-sm font-medium">Redução</div>
-                      <div className="text-white/50 text-xs">Mortalidade</div>
+                      <div className="mb-1 text-xl font-black text-emerald-400 sm:text-2xl md:text-3xl">
+                        75%
+                      </div>
+                      <div className="text-xs font-medium text-white/70 sm:text-sm">
+                        Redução
+                      </div>
+                      <div className="text-xs text-white/50">Mortalidade</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-amber-400 text-xl sm:text-2xl md:text-3xl font-black mb-1">40%</div>
-                      <div className="text-white/70 text-xs sm:text-sm font-medium">Aumento</div>
-                      <div className="text-white/50 text-xs">Lucratividade</div>
+                      <div className="mb-1 text-xl font-black text-amber-400 sm:text-2xl md:text-3xl">
+                        40%
+                      </div>
+                      <div className="text-xs font-medium text-white/70 sm:text-sm">
+                        Aumento
+                      </div>
+                      <div className="text-xs text-white/50">Lucratividade</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-blue-400 text-xl sm:text-2xl md:text-3xl font-black mb-1">500+</div>
-                      <div className="text-white/70 text-xs sm:text-sm font-medium">Fazendas</div>
-                      <div className="text-white/50 text-xs">Atendidas</div>
+                      <div className="mb-1 text-xl font-black text-blue-400 sm:text-2xl md:text-3xl">
+                        500+
+                      </div>
+                      <div className="text-xs font-medium text-white/70 sm:text-sm">
+                        Fazendas
+                      </div>
+                      <div className="text-xs text-white/50">Atendidas</div>
                     </div>
                   </div>
                 </div>
@@ -127,15 +141,15 @@ export function HeroSection() {
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.5, delay: 0.3, ease: "easeOut" }}
+                transition={{ duration: 1.5, delay: 0.3, ease: 'easeOut' }}
                 className="space-y-8"
               >
                 <h1 className="relative">
                   {/* Sophisticated Background Glow */}
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/8 to-amber-500/8 blur-3xl" />
 
-                  <div className="relative text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black leading-[0.85] tracking-tight">
-                    <div className="text-white mb-4">
+                  <div className="relative text-3xl leading-[0.85] font-black tracking-tight sm:text-4xl md:text-6xl lg:text-8xl">
+                    <div className="mb-4 text-white">
                       Transforme sua
                       <br />
                       <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-amber-400 bg-clip-text text-transparent">
@@ -152,25 +166,37 @@ export function HeroSection() {
                   transition={{ duration: 2, delay: 1 }}
                   className="relative"
                 >
-                  <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500/3 to-transparent rounded-2xl" />
-                  <p className="relative text-base sm:text-lg md:text-xl lg:text-2xl text-white/85 leading-relaxed max-w-2xl font-light">
-                    Sistema completo de <strong className="text-emerald-400 font-semibold">manejo sanitário</strong> que
-                    eleva a produtividade através de <strong className="text-amber-400 font-semibold">metodologia científica</strong>
+                  <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-emerald-500/3 to-transparent" />
+                  <p className="relative max-w-2xl text-base leading-relaxed font-light text-white/85 sm:text-lg md:text-xl lg:text-2xl">
+                    Sistema completo de{' '}
+                    <strong className="font-semibold text-emerald-400">
+                      manejo sanitário
+                    </strong>{' '}
+                    que eleva a produtividade através de{' '}
+                    <strong className="font-semibold text-amber-400">
+                      metodologia científica
+                    </strong>
                     comprovada em campo.
                   </p>
 
                   <div className="mt-8 flex items-center gap-8 text-white/60">
                     <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-emerald-400" />
-                      <span className="text-sm font-medium">Protocolo Veterinário</span>
+                      <div className="h-2 w-2 rounded-full bg-emerald-400" />
+                      <span className="text-sm font-medium">
+                        Protocolo Veterinário
+                      </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-amber-400" />
-                      <span className="text-sm font-medium">Resultados Validados</span>
+                      <div className="h-2 w-2 rounded-full bg-amber-400" />
+                      <span className="text-sm font-medium">
+                        Resultados Validados
+                      </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-blue-400" />
-                      <span className="text-sm font-medium">Suporte Especializado</span>
+                      <div className="h-2 w-2 rounded-full bg-blue-400" />
+                      <span className="text-sm font-medium">
+                        Suporte Especializado
+                      </span>
                     </div>
                   </div>
                 </motion.div>
@@ -181,13 +207,13 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 1.5 }}
-                className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6"
+                className="flex flex-col items-center gap-4 sm:flex-row sm:gap-6"
               >
-                <div className="relative group">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-amber-500 rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500" />
+                <div className="group relative">
+                  <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-emerald-500 to-amber-500 opacity-60 blur transition duration-500 group-hover:opacity-90" />
                   <Button
                     size="xl"
-                    className="relative bg-black border-0 text-white font-bold py-4 px-6 sm:py-6 sm:px-12 text-base sm:text-lg hover:bg-black/90 transition-all duration-300 w-full sm:w-auto"
+                    className="relative w-full border-0 bg-black px-6 py-4 text-base font-bold text-white transition-all duration-300 hover:bg-black/90 sm:w-auto sm:px-12 sm:py-6 sm:text-lg"
                   >
                     <span className="flex items-center gap-3">
                       Quero Participar
@@ -195,7 +221,7 @@ export function HeroSection() {
                         animate={{ x: [0, 5, 0] }}
                         transition={{ duration: 2, repeat: Infinity }}
                       >
-                        <ChevronRight className="w-5 h-5" />
+                        <ChevronRight className="h-5 w-5" />
                       </motion.div>
                     </span>
                   </Button>
@@ -204,12 +230,11 @@ export function HeroSection() {
                 <Button
                   variant="ghost"
                   size="xl"
-                  className="text-white/70 border border-white/20 hover:border-emerald-400/50 hover:text-emerald-400 font-semibold py-4 px-6 sm:py-6 sm:px-8 transition-all duration-500 w-full sm:w-auto"
+                  className="w-full border border-white/20 px-6 py-4 font-semibold text-white/70 transition-all duration-500 hover:border-emerald-400/50 hover:text-emerald-400 sm:w-auto sm:px-8 sm:py-6"
                 >
                   Ver Detalhes
                 </Button>
               </motion.div>
-
             </div>
 
             {/* Right Column - Professional Interface */}
@@ -222,65 +247,68 @@ export function HeroSection() {
                 className="relative"
               >
                 {/* Sophisticated Glow */}
-                <div className="absolute -inset-6 bg-gradient-to-r from-emerald-500/15 via-transparent to-amber-500/15 rounded-3xl blur-xl" />
+                <div className="absolute -inset-6 rounded-3xl bg-gradient-to-r from-emerald-500/15 via-transparent to-amber-500/15 blur-xl" />
 
                 {/* Subtle Corner Accents */}
                 <div className="absolute -inset-1">
-                  <div className="absolute top-0 left-0 w-12 h-12">
-                    <div className="absolute top-0 left-0 w-6 h-px bg-gradient-to-r from-emerald-400/40 to-transparent" />
-                    <div className="absolute top-0 left-0 w-px h-6 bg-gradient-to-b from-emerald-400/40 to-transparent" />
+                  <div className="absolute top-0 left-0 h-12 w-12">
+                    <div className="absolute top-0 left-0 h-px w-6 bg-gradient-to-r from-emerald-400/40 to-transparent" />
+                    <div className="absolute top-0 left-0 h-6 w-px bg-gradient-to-b from-emerald-400/40 to-transparent" />
                   </div>
-                  <div className="absolute top-0 right-0 w-12 h-12">
-                    <div className="absolute top-0 right-0 w-6 h-px bg-gradient-to-l from-emerald-400/40 to-transparent" />
-                    <div className="absolute top-0 right-0 w-px h-6 bg-gradient-to-b from-emerald-400/40 to-transparent" />
+                  <div className="absolute top-0 right-0 h-12 w-12">
+                    <div className="absolute top-0 right-0 h-px w-6 bg-gradient-to-l from-emerald-400/40 to-transparent" />
+                    <div className="absolute top-0 right-0 h-6 w-px bg-gradient-to-b from-emerald-400/40 to-transparent" />
                   </div>
-                  <div className="absolute bottom-0 left-0 w-12 h-12">
-                    <div className="absolute bottom-0 left-0 w-6 h-px bg-gradient-to-r from-emerald-400/40 to-transparent" />
-                    <div className="absolute bottom-0 left-0 w-px h-6 bg-gradient-to-t from-emerald-400/40 to-transparent" />
+                  <div className="absolute bottom-0 left-0 h-12 w-12">
+                    <div className="absolute bottom-0 left-0 h-px w-6 bg-gradient-to-r from-emerald-400/40 to-transparent" />
+                    <div className="absolute bottom-0 left-0 h-6 w-px bg-gradient-to-t from-emerald-400/40 to-transparent" />
                   </div>
-                  <div className="absolute bottom-0 right-0 w-12 h-12">
-                    <div className="absolute bottom-0 right-0 w-6 h-px bg-gradient-to-l from-emerald-400/40 to-transparent" />
-                    <div className="absolute bottom-0 right-0 w-px h-6 bg-gradient-to-t from-emerald-400/40 to-transparent" />
+                  <div className="absolute right-0 bottom-0 h-12 w-12">
+                    <div className="absolute right-0 bottom-0 h-px w-6 bg-gradient-to-l from-emerald-400/40 to-transparent" />
+                    <div className="absolute right-0 bottom-0 h-6 w-px bg-gradient-to-t from-emerald-400/40 to-transparent" />
                   </div>
                 </div>
 
                 {/* Main Professional Panel */}
-                <div className="relative bg-black/85 backdrop-blur-2xl border border-emerald-500/20 rounded-2xl p-4 sm:p-6 md:p-8">
+                <div className="relative rounded-2xl border border-emerald-500/20 bg-black/85 p-4 backdrop-blur-2xl sm:p-6 md:p-8">
                   {/* Professional Header */}
-                  <div className="text-center mb-6 sm:mb-8">
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center relative shadow-2xl shadow-emerald-500/25">
-                      <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
-                      <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/10 to-transparent rounded-2xl" />
+                  <div className="mb-6 text-center sm:mb-8">
+                    <div className="relative mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 shadow-2xl shadow-emerald-500/25 sm:mb-6 sm:h-16 sm:w-16">
+                      <Phone className="h-6 w-6 text-white sm:h-8 sm:w-8" />
+                      <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-400/10 to-transparent" />
                     </div>
 
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">
+                    <h3 className="mb-2 text-lg font-bold text-white sm:text-xl md:text-2xl">
                       Pré-inscrição Exclusiva
                     </h3>
-                    <p className="text-emerald-300/80 text-sm font-medium">
+                    <p className="text-sm font-medium text-emerald-300/80">
                       Primeira Turma - Vagas Limitadas
                     </p>
                   </div>
 
                   {/* Professional Pricing */}
-                  <div className="bg-gradient-to-r from-emerald-950/40 to-emerald-900/20 border border-emerald-500/30 rounded-xl p-4 sm:p-6 mb-6 sm:mb-8">
+                  <div className="mb-6 rounded-xl border border-emerald-500/30 bg-gradient-to-r from-emerald-950/40 to-emerald-900/20 p-4 sm:mb-8 sm:p-6">
                     <div className="text-center">
-                      <div className="text-white/50 text-sm font-medium line-through mb-2">
+                      <div className="mb-2 text-sm font-medium text-white/50 line-through">
                         Valor Regular: R$ 1.497
                       </div>
-                      <div className="text-3xl sm:text-4xl md:text-5xl font-black text-emerald-400 mb-2">
+                      <div className="mb-2 text-3xl font-black text-emerald-400 sm:text-4xl md:text-5xl">
                         R$ 497
                       </div>
-                      <div className="text-amber-400 font-semibold text-sm uppercase tracking-wide">
+                      <div className="text-sm font-semibold tracking-wide text-amber-400 uppercase">
                         Primeira Turma
                       </div>
-                      <div className="mt-4 text-white/60 text-xs">
+                      <div className="mt-4 text-xs text-white/60">
                         Parcelamento disponível • Garantia de 30 dias
                       </div>
                     </div>
                   </div>
 
                   {/* Professional Form */}
-                  <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="space-y-4 sm:space-y-6"
+                  >
                     <div className="space-y-3 sm:space-y-4">
                       <div className="relative">
                         <input
@@ -288,10 +316,13 @@ export function HeroSection() {
                           placeholder="Nome completo"
                           value={formData.name}
                           onChange={(e) =>
-                            setFormData((prev) => ({ ...prev, name: e.target.value }))
+                            setFormData((prev) => ({
+                              ...prev,
+                              name: e.target.value,
+                            }))
                           }
                           required
-                          className="w-full bg-black/50 border border-emerald-500/30 rounded-xl px-3 py-3 sm:px-4 sm:py-4 text-sm sm:text-base text-white font-medium placeholder:text-emerald-400/60 focus:border-emerald-400 focus:ring-0 focus:outline-none focus:bg-black/70 transition-all duration-300"
+                          className="w-full rounded-xl border border-emerald-500/30 bg-black/50 px-3 py-3 text-sm font-medium text-white transition-all duration-300 placeholder:text-emerald-400/60 focus:border-emerald-400 focus:bg-black/70 focus:ring-0 focus:outline-none sm:px-4 sm:py-4 sm:text-base"
                         />
                       </div>
 
@@ -307,7 +338,7 @@ export function HeroSection() {
                             }))
                           }
                           required
-                          className="w-full bg-black/50 border border-emerald-500/30 rounded-xl px-3 py-3 sm:px-4 sm:py-4 text-sm sm:text-base text-white font-medium placeholder:text-emerald-400/60 focus:border-emerald-400 focus:ring-0 focus:outline-none focus:bg-black/70 transition-all duration-300"
+                          className="w-full rounded-xl border border-emerald-500/30 bg-black/50 px-3 py-3 text-sm font-medium text-white transition-all duration-300 placeholder:text-emerald-400/60 focus:border-emerald-400 focus:bg-black/70 focus:ring-0 focus:outline-none sm:px-4 sm:py-4 sm:text-base"
                         />
                       </div>
                     </div>
@@ -326,11 +357,14 @@ export function HeroSection() {
                         required
                         className="mt-1.5 h-4 w-4 rounded border-emerald-500/30 bg-black text-emerald-400 focus:ring-emerald-500"
                       />
-                      <label htmlFor="consent" className="text-white/70 text-sm font-medium leading-relaxed">
+                      <label
+                        htmlFor="consent"
+                        className="text-sm leading-relaxed font-medium text-white/70"
+                      >
                         Autorizo contato por WhatsApp conforme{' '}
                         <a
                           href="/privacy"
-                          className="text-emerald-400 hover:text-emerald-300 transition-colors underline"
+                          className="text-emerald-400 underline transition-colors hover:text-emerald-300"
                         >
                           Política de Privacidade
                         </a>
@@ -344,9 +378,11 @@ export function HeroSection() {
                       <Button
                         type="submit"
                         size="xl"
-                        className="w-full bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-bold py-4 sm:py-6 text-base sm:text-lg border-0 shadow-xl shadow-emerald-500/20 hover:shadow-emerald-400/30 transition-all duration-300"
+                        className="w-full border-0 bg-gradient-to-r from-emerald-600 to-emerald-500 py-4 text-base font-bold text-white shadow-xl shadow-emerald-500/20 transition-all duration-300 hover:from-emerald-500 hover:to-emerald-400 hover:shadow-emerald-400/30 sm:py-6 sm:text-lg"
                         loading={isSubmitting}
-                        disabled={!formData.name || !formData.phone || !formData.consent}
+                        disabled={
+                          !formData.name || !formData.phone || !formData.consent
+                        }
                       >
                         {isSubmitting ? 'Enviando...' : 'Garantir Minha Vaga'}
                       </Button>
@@ -354,18 +390,18 @@ export function HeroSection() {
                   </form>
 
                   {/* Trust Indicators */}
-                  <div className="mt-8 pt-6 border-t border-emerald-500/15">
-                    <div className="flex items-center justify-center gap-6 text-white/60 text-xs font-medium">
+                  <div className="mt-8 border-t border-emerald-500/15 pt-6">
+                    <div className="flex items-center justify-center gap-6 text-xs font-medium text-white/60">
                       <div className="flex items-center gap-2">
-                        <Shield className="w-3 h-3 text-emerald-400" />
+                        <Shield className="h-3 w-3 text-emerald-400" />
                         <span>100% Seguro</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Users className="w-3 h-3 text-amber-400" />
+                        <Users className="h-3 w-3 text-amber-400" />
                         <span>Vagas Limitadas</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Award className="w-3 h-3 text-blue-400" />
+                        <Award className="h-3 w-3 text-blue-400" />
                         <span>Certificado</span>
                       </div>
                     </div>
@@ -373,13 +409,12 @@ export function HeroSection() {
                 </div>
               </motion.div>
             </div>
-
           </div>
         </div>
       </Container>
 
       {/* Subtle Ambient Elements */}
-      <div className="absolute inset-0 pointer-events-none opacity-40">
+      <div className="pointer-events-none absolute inset-0 opacity-40">
         {[
           { left: 15, top: 25, delay: 0, duration: 12 },
           { left: 75, top: 15, delay: 1, duration: 14 },
@@ -404,9 +439,9 @@ export function HeroSection() {
               duration: item.duration,
               delay: item.delay,
               repeat: Infinity,
-              ease: "easeInOut",
+              ease: 'easeInOut',
             }}
-            className="absolute w-2 h-2 bg-emerald-400/20 rounded-full blur-sm"
+            className="absolute h-2 w-2 rounded-full bg-emerald-400/20 blur-sm"
             style={{
               left: `${item.left}%`,
               top: `${item.top}%`,

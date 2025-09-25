@@ -9,25 +9,40 @@ const targetProfiles = [
     icon: TreePine,
     title: 'Produtores Sustentáveis',
     subtitle: 'Avicultura Responsável',
-    description: 'Proprietários rurais comprometidos com práticas sustentáveis que buscam maximizar a produtividade enquanto preservam o meio ambiente.',
-    benefits: ['Redução de 75% na mortalidade', 'ROI sustentável comprovado', 'Certificação ambiental'],
-    highlight: 'Foco na sustentabilidade'
+    description:
+      'Proprietários rurais comprometidos com práticas sustentáveis que buscam maximizar a produtividade enquanto preservam o meio ambiente.',
+    benefits: [
+      'Redução de 75% na mortalidade',
+      'ROI sustentável comprovado',
+      'Certificação ambiental',
+    ],
+    highlight: 'Foco na sustentabilidade',
   },
   {
     icon: Sprout,
     title: 'Técnicos Especializados',
     subtitle: 'Expertise Avançada',
-    description: 'Profissionais técnicos e veterinários que lideram programas de sanidade em cooperativas e empresas do agronegócio.',
-    benefits: ['Metodologia científica', 'Protocolos validados', 'Network especializado'],
-    highlight: 'Conhecimento técnico'
+    description:
+      'Profissionais técnicos e veterinários que lideram programas de sanidade em cooperativas e empresas do agronegócio.',
+    benefits: [
+      'Metodologia científica',
+      'Protocolos validados',
+      'Network especializado',
+    ],
+    highlight: 'Conhecimento técnico',
   },
   {
     icon: Leaf,
     title: 'Novos Empreendedores',
     subtitle: 'Inovação Rural',
-    description: 'Empreendedores e estudantes que desejam ingressar na avicultura com base científica e práticas inovadoras.',
-    benefits: ['Mentoria especializada', 'Suporte inicial completo', 'Cases de sucesso'],
-    highlight: 'Futuro do agronegócio'
+    description:
+      'Empreendedores e estudantes que desejam ingressar na avicultura com base científica e práticas inovadoras.',
+    benefits: [
+      'Mentoria especializada',
+      'Suporte inicial completo',
+      'Cases de sucesso',
+    ],
+    highlight: 'Futuro do agronegócio',
   },
 ]
 
@@ -39,7 +54,10 @@ const impactStats = [
 
 export function TargetAudienceSection() {
   return (
-    <section id="target-audience" className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-black to-emerald-950/40 py-24 sm:py-32">
+    <section
+      id="target-audience"
+      className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-black to-emerald-950/40 py-24 sm:py-32"
+    >
       {/* Organic Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,#10b981_1px,transparent_1px),radial-gradient(circle_at_70%_30%,#f59e0b_1px,transparent_1px)] bg-[length:80px_80px]" />
@@ -52,10 +70,10 @@ export function TargetAudienceSection() {
         }}
         transition={{
           duration: 12,
-          ease: "easeInOut",
+          ease: 'easeInOut',
           repeat: Infinity,
         }}
-        className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-emerald-500/5 via-transparent to-amber-500/5"
+        className="absolute top-0 left-0 h-full w-full bg-gradient-to-br from-emerald-500/5 via-transparent to-amber-500/5"
       />
 
       <Container className="relative">
@@ -63,18 +81,18 @@ export function TargetAudienceSection() {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="mb-20 text-center"
         >
-          <div className="inline-flex items-center gap-3 bg-emerald-950/30 border border-emerald-700/40 backdrop-blur-sm rounded-xl px-6 py-3 mb-8">
-            <Leaf className="w-5 h-5 text-emerald-400" />
-            <span className="text-emerald-300 font-semibold text-sm tracking-wide uppercase">
+          <div className="mb-8 inline-flex items-center gap-3 rounded-xl border border-emerald-700/40 bg-emerald-950/30 px-6 py-3 backdrop-blur-sm">
+            <Leaf className="h-5 w-5 text-emerald-400" />
+            <span className="text-sm font-semibold tracking-wide text-emerald-300 uppercase">
               Perfil de Participantes
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[0.9] tracking-tight mb-6 sm:mb-8">
+          <h2 className="mb-6 text-3xl leading-[0.9] font-black tracking-tight text-white sm:mb-8 sm:text-4xl md:text-5xl lg:text-6xl">
             Quem Transforma a
             <br />
             <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-amber-400 bg-clip-text text-transparent">
@@ -82,14 +100,21 @@ export function TargetAudienceSection() {
             </span>
           </h2>
 
-          <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto font-light">
-            Profissionais visionários que lideram a <strong className="text-emerald-400 font-semibold">revolução sustentável</strong> no
-            agronegócio, combinando <strong className="text-amber-400 font-semibold">ciência veterinária</strong> com responsabilidade ambiental.
+          <p className="mx-auto max-w-3xl text-xl leading-relaxed font-light text-white/80">
+            Profissionais visionários que lideram a{' '}
+            <strong className="font-semibold text-emerald-400">
+              revolução sustentável
+            </strong>{' '}
+            no agronegócio, combinando{' '}
+            <strong className="font-semibold text-amber-400">
+              ciência veterinária
+            </strong>{' '}
+            com responsabilidade ambiental.
           </p>
         </motion.div>
 
         {/* Target Profiles */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-24">
+        <div className="mb-24 grid gap-8 lg:grid-cols-3">
           {targetProfiles.map((profile, index) => (
             <motion.div
               key={profile.title}
@@ -100,18 +125,17 @@ export function TargetAudienceSection() {
               className="group relative"
             >
               {/* Card Glow Effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition duration-500" />
+              <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-emerald-500/20 to-amber-500/20 opacity-0 blur-xl transition duration-500 group-hover:opacity-100" />
 
               {/* Main Card */}
-              <div className="relative bg-black/70 backdrop-blur-xl border border-emerald-500/20 rounded-3xl p-8 h-full hover:border-emerald-400/40 transition-all duration-500">
-
+              <div className="relative h-full rounded-3xl border border-emerald-500/20 bg-black/70 p-8 backdrop-blur-xl transition-all duration-500 hover:border-emerald-400/40">
                 {/* Icon & Badge */}
-                <div className="flex items-start justify-between mb-6">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 flex items-center justify-center backdrop-blur-sm border border-emerald-400/30">
-                    <profile.icon className="w-8 h-8 text-emerald-400" />
+                <div className="mb-6 flex items-start justify-between">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-emerald-400/30 bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 backdrop-blur-sm">
+                    <profile.icon className="h-8 w-8 text-emerald-400" />
                   </div>
-                  <div className="bg-amber-500/10 border border-amber-400/20 rounded-full px-3 py-1">
-                    <span className="text-amber-400 text-xs font-semibold">
+                  <div className="rounded-full border border-amber-400/20 bg-amber-500/10 px-3 py-1">
+                    <span className="text-xs font-semibold text-amber-400">
                       {profile.highlight}
                     </span>
                   </div>
@@ -120,15 +144,15 @@ export function TargetAudienceSection() {
                 {/* Content */}
                 <div className="space-y-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-2">
+                    <h3 className="mb-2 text-2xl font-bold text-white">
                       {profile.title}
                     </h3>
-                    <p className="text-emerald-300 text-sm font-semibold uppercase tracking-wide">
+                    <p className="text-sm font-semibold tracking-wide text-emerald-300 uppercase">
                       {profile.subtitle}
                     </p>
                   </div>
 
-                  <p className="text-white/70 leading-relaxed">
+                  <p className="leading-relaxed text-white/70">
                     {profile.description}
                   </p>
 
@@ -136,8 +160,8 @@ export function TargetAudienceSection() {
                   <div className="space-y-3 pt-4">
                     {profile.benefits.map((benefit, i) => (
                       <div key={i} className="flex items-center gap-3">
-                        <div className="w-2 h-2 rounded-full bg-emerald-400" />
-                        <span className="text-white/80 text-sm font-medium">
+                        <div className="h-2 w-2 rounded-full bg-emerald-400" />
+                        <span className="text-sm font-medium text-white/80">
                           {benefit}
                         </span>
                       </div>
@@ -146,7 +170,7 @@ export function TargetAudienceSection() {
                 </div>
 
                 {/* Hover Effect Border */}
-                <div className="absolute inset-0 rounded-3xl border border-transparent group-hover:border-emerald-400/30 transition-all duration-500" />
+                <div className="absolute inset-0 rounded-3xl border border-transparent transition-all duration-500 group-hover:border-emerald-400/30" />
               </div>
             </motion.div>
           ))}
@@ -160,19 +184,19 @@ export function TargetAudienceSection() {
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500/10 to-amber-500/10 rounded-3xl blur-2xl" />
+          <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-emerald-500/10 to-amber-500/10 blur-2xl" />
 
-          <div className="relative bg-black/60 backdrop-blur-2xl border border-emerald-500/20 rounded-3xl p-12">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-white mb-4">
+          <div className="relative rounded-3xl border border-emerald-500/20 bg-black/60 p-12 backdrop-blur-2xl">
+            <div className="mb-12 text-center">
+              <h3 className="mb-4 text-3xl font-bold text-white">
                 Impacto Comprovado em Campo
               </h3>
-              <p className="text-white/70 text-lg">
+              <p className="text-lg text-white/70">
                 Resultados que transformam negócios e preservam o futuro
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid gap-8 md:grid-cols-3">
               {impactStats.map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -183,19 +207,17 @@ export function TargetAudienceSection() {
                     duration: 3,
                     delay: index * 0.5,
                     repeat: Infinity,
-                    ease: "easeInOut",
+                    ease: 'easeInOut',
                   }}
-                  className="text-center group"
+                  className="group text-center"
                 >
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <stat.icon className="w-8 h-8 text-emerald-400" />
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 transition-transform duration-300 group-hover:scale-110">
+                    <stat.icon className="h-8 w-8 text-emerald-400" />
                   </div>
-                  <div className="text-4xl font-black text-emerald-400 mb-2">
+                  <div className="mb-2 text-4xl font-black text-emerald-400">
                     {stat.number}
                   </div>
-                  <div className="text-white/70 font-medium">
-                    {stat.label}
-                  </div>
+                  <div className="font-medium text-white/70">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -204,7 +226,7 @@ export function TargetAudienceSection() {
       </Container>
 
       {/* Floating Organic Elements */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="pointer-events-none absolute inset-0">
         {[
           { left: 10, top: 20, delay: 0, duration: 10 },
           { left: 85, top: 30, delay: 1.5, duration: 12 },
@@ -226,9 +248,9 @@ export function TargetAudienceSection() {
               duration: item.duration,
               delay: item.delay,
               repeat: Infinity,
-              ease: "easeInOut",
+              ease: 'easeInOut',
             }}
-            className="absolute w-3 h-3 bg-emerald-400/10 rounded-full blur-sm"
+            className="absolute h-3 w-3 rounded-full bg-emerald-400/10 blur-sm"
             style={{
               left: `${item.left}%`,
               top: `${item.top}%`,

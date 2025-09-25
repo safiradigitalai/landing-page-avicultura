@@ -12,7 +12,7 @@ import {
   TableProperties,
   BookOpen,
   Award,
-  CheckCircle
+  CheckCircle,
 } from 'lucide-react'
 import { Container } from '@/components/ui/Container'
 
@@ -21,51 +21,76 @@ const courseModules = [
     number: 'M1',
     title: 'Fundamentos de Sanidade & Leitura de Sinais',
     subtitle: 'Base científica para decisões assertivas',
-    description: 'Doenças comuns (respiratórias, entéricas, parasitárias) e o fluxo estratégico "ver → suspeitar → agir" que separa amadores de profissionais.',
-    keyTopics: ['Diagnóstico visual avançado', 'Sinais precoces de problemas', 'Protocolos de ação imediata'],
+    description:
+      'Doenças comuns (respiratórias, entéricas, parasitárias) e o fluxo estratégico "ver → suspeitar → agir" que separa amadores de profissionais.',
+    keyTopics: [
+      'Diagnóstico visual avançado',
+      'Sinais precoces de problemas',
+      'Protocolos de ação imediata',
+    ],
     impact: 'Redução de 30-50% no tempo de resposta',
     icon: Stethoscope,
-    duration: '2 horas intensivas'
+    duration: '2 horas intensivas',
   },
   {
     number: 'M2',
     title: 'Biossegurança que Funciona na Prática',
     subtitle: 'Protocolos que realmente protegem',
-    description: 'Água/ração, cama e ventilação, quarentena e limpeza de equipamentos com POPs validados em campo que você pode implementar hoje.',
-    keyTopics: ['POPs personalizáveis', 'Controle de qualidade da água', 'Gestão eficiente de visitas'],
+    description:
+      'Água/ração, cama e ventilação, quarentena e limpeza de equipamentos com POPs validados em campo que você pode implementar hoje.',
+    keyTopics: [
+      'POPs personalizáveis',
+      'Controle de qualidade da água',
+      'Gestão eficiente de visitas',
+    ],
     impact: 'Até 70% menos surtos sanitários',
     icon: Shield,
-    duration: '2,5 horas + material prático'
+    duration: '2,5 horas + material prático',
   },
   {
     number: 'M3',
     title: 'Calendário Sanitário Estratégico',
     subtitle: 'Timing perfeito = resultados máximos',
-    description: 'Protocolos por fase, erros comuns que custam caro e ajustes precisos por clima/lotação. Calendário editável que se adapta à sua realidade.',
-    keyTopics: ['Cronogramas otimizados', 'Adaptação climática', 'Controle de custos'],
+    description:
+      'Protocolos por fase, erros comuns que custam caro e ajustes precisos por clima/lotação. Calendário editável que se adapta à sua realidade.',
+    keyTopics: [
+      'Cronogramas otimizados',
+      'Adaptação climática',
+      'Controle de custos',
+    ],
     impact: 'Economia de 25-40% em medicamentos',
     icon: Calendar,
-    duration: '2 horas + planilhas'
+    duration: '2 horas + planilhas',
   },
   {
     number: 'M4',
     title: 'Auditoria que Transforma Sanidade em R$',
     subtitle: 'KPIs que mostram o verdadeiro impacto',
-    description: 'Indicadores precisos, como reduzir mortalidade de forma sustentável e traduzir cada ação sanitária em lucro mensurável.',
-    keyTopics: ['Métricas financeiras', 'ROI de protocolos', 'Análise preditiva'],
+    description:
+      'Indicadores precisos, como reduzir mortalidade de forma sustentável e traduzir cada ação sanitária em lucro mensurável.',
+    keyTopics: [
+      'Métricas financeiras',
+      'ROI de protocolos',
+      'Análise preditiva',
+    ],
     impact: 'Aumento médio de 15-25% na margem',
     icon: BarChart3,
-    duration: '2,5 horas + ferramentas'
+    duration: '2,5 horas + ferramentas',
   },
   {
     number: 'M5',
     title: 'Cases Reais & Correção de Rota',
     subtitle: 'Aprendizado com situações reais',
-    description: 'Estudos de caso reais, checklists de inspeção e processo de melhoria contínua que mantém sua operação sempre evoluindo.',
-    keyTopics: ['Análise de casos críticos', 'Checklists validados', 'Melhoria contínua'],
+    description:
+      'Estudos de caso reais, checklists de inspeção e processo de melhoria contínua que mantém sua operação sempre evoluindo.',
+    keyTopics: [
+      'Análise de casos críticos',
+      'Checklists validados',
+      'Melhoria contínua',
+    ],
     impact: 'Sistema de gestão permanente',
     icon: Target,
-    duration: '2 horas + templates'
+    duration: '2 horas + templates',
   },
 ]
 
@@ -73,33 +98,37 @@ const professionalDeliverables = [
   {
     icon: Printer,
     title: 'POPs Profissionais Prontos',
-    description: 'Procedimentos padronizados validados para água, cama, visitas e limpeza',
-    value: 'R$ 500 de valor'
+    description:
+      'Procedimentos padronizados validados para água, cama, visitas e limpeza',
+    value: 'R$ 500 de valor',
   },
   {
     icon: Calendar,
     title: 'Sistema de Calendário Editável',
     description: 'Planilhas e PDFs personalizáveis com cronogramas otimizados',
-    value: 'R$ 300 de valor'
+    value: 'R$ 300 de valor',
   },
   {
     icon: FileText,
     title: 'Kit Completo de Checklists',
-    description: 'Listas de verificação profissionais para auditoria e inspeção',
-    value: 'R$ 400 de valor'
+    description:
+      'Listas de verificação profissionais para auditoria e inspeção',
+    value: 'R$ 400 de valor',
   },
   {
     icon: TableProperties,
     title: 'Calculadora Financeira Avançada',
     description: 'Ferramenta de impacto: perdas evitáveis → ROI mensal',
-    value: 'R$ 350 de valor'
+    value: 'R$ 350 de valor',
   },
 ]
 
-
 export function CourseModulesSection() {
   return (
-    <section id="course-modules" className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-black to-blue-950/40 py-24 sm:py-32">
+    <section
+      id="course-modules"
+      className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-black to-blue-950/40 py-24 sm:py-32"
+    >
       {/* Scientific Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_75%,#3b82f6_1px,transparent_1px),radial-gradient(circle_at_75%_25%,#10b981_1px,transparent_1px)] bg-[length:60px_60px]" />
@@ -112,10 +141,10 @@ export function CourseModulesSection() {
         }}
         transition={{
           duration: 15,
-          ease: "easeInOut",
+          ease: 'easeInOut',
           repeat: Infinity,
         }}
-        className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-500/5 via-transparent to-emerald-500/5"
+        className="absolute top-0 left-0 h-full w-full bg-gradient-to-br from-blue-500/5 via-transparent to-emerald-500/5"
       />
 
       <Container className="relative">
@@ -123,18 +152,18 @@ export function CourseModulesSection() {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="mb-20 text-center"
         >
-          <div className="inline-flex items-center gap-3 bg-blue-950/30 border border-blue-700/40 backdrop-blur-sm rounded-xl px-6 py-3 mb-8">
-            <BookOpen className="w-5 h-5 text-blue-400" />
-            <span className="text-blue-300 font-semibold text-sm tracking-wide uppercase">
+          <div className="mb-8 inline-flex items-center gap-3 rounded-xl border border-blue-700/40 bg-blue-950/30 px-6 py-3 backdrop-blur-sm">
+            <BookOpen className="h-5 w-5 text-blue-400" />
+            <span className="text-sm font-semibold tracking-wide text-blue-300 uppercase">
               Metodologia Científica
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[0.9] tracking-tight mb-6 sm:mb-8">
+          <h2 className="mb-6 text-3xl leading-[0.9] font-black tracking-tight text-white sm:mb-8 sm:text-4xl md:text-5xl lg:text-6xl">
             Conhecimento que
             <br />
             <span className="bg-gradient-to-r from-blue-400 via-blue-300 to-emerald-400 bg-clip-text text-transparent">
@@ -142,14 +171,21 @@ export function CourseModulesSection() {
             </span>
           </h2>
 
-          <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto font-light">
-            5 módulos estruturados com <strong className="text-blue-400 font-semibold">metodologia científica</strong> para
-            implementar manejo sanitário de <strong className="text-emerald-400 font-semibold">nível mundial</strong>.
+          <p className="mx-auto max-w-3xl text-xl leading-relaxed font-light text-white/80">
+            5 módulos estruturados com{' '}
+            <strong className="font-semibold text-blue-400">
+              metodologia científica
+            </strong>{' '}
+            para implementar manejo sanitário de{' '}
+            <strong className="font-semibold text-emerald-400">
+              nível mundial
+            </strong>
+            .
           </p>
         </motion.div>
 
         {/* Course Modules */}
-        <div className="space-y-8 mb-24">
+        <div className="mb-24 space-y-8">
           {courseModules.map((module, index) => (
             <motion.div
               key={module.number}
@@ -160,57 +196,62 @@ export function CourseModulesSection() {
               className="group relative"
             >
               {/* Module Glow */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-blue-500/20 to-emerald-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition duration-500" />
+              <div className="absolute -inset-2 rounded-3xl bg-gradient-to-r from-blue-500/20 to-emerald-500/20 opacity-0 blur-xl transition duration-500 group-hover:opacity-100" />
 
               {/* Main Module Card */}
-              <div className="relative bg-black/80 backdrop-blur-2xl border border-blue-500/20 rounded-3xl p-4 sm:p-6 md:p-8 hover:border-blue-400/40 transition-all duration-500">
+              <div className="relative rounded-3xl border border-blue-500/20 bg-black/80 p-4 backdrop-blur-2xl transition-all duration-500 hover:border-blue-400/40 sm:p-6 md:p-8">
                 {/* Module Header */}
-                <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 mb-6">
+                <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
                   {/* Module Icon & Number - Mobile Stack, Desktop Inline */}
                   <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-600/20 flex items-center justify-center backdrop-blur-sm border border-blue-400/30">
-                      <module.icon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-blue-400" />
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-400/30 bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-sm sm:h-16 sm:w-16 md:h-20 md:w-20">
+                      <module.icon className="h-6 w-6 text-blue-400 sm:h-8 sm:w-8 md:h-10 md:w-10" />
                     </div>
-                    <div className="text-3xl sm:text-4xl md:text-6xl font-black text-blue-400/30">
+                    <div className="text-3xl font-black text-blue-400/30 sm:text-4xl md:text-6xl">
                       {module.number}
                     </div>
                   </div>
 
                   <div className="flex-1">
-                    <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4 mb-4">
+                    <div className="mb-4 flex flex-col justify-between gap-3 sm:flex-row sm:items-start sm:gap-4">
                       <div className="flex-1">
-                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">
+                        <h3 className="mb-2 text-lg font-bold text-white sm:text-xl md:text-2xl">
                           {module.title}
                         </h3>
-                        <p className="text-blue-300 text-base sm:text-lg font-semibold">
+                        <p className="text-base font-semibold text-blue-300 sm:text-lg">
                           {module.subtitle}
                         </p>
                       </div>
-                      <div className="bg-emerald-500/10 border border-emerald-400/20 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 text-center self-start">
-                        <div className="text-emerald-400 text-xs sm:text-sm font-bold whitespace-nowrap">
+                      <div className="self-start rounded-full border border-emerald-400/20 bg-emerald-500/10 px-3 py-1.5 text-center sm:px-4 sm:py-2">
+                        <div className="text-xs font-bold whitespace-nowrap text-emerald-400 sm:text-sm">
                           {module.duration}
                         </div>
                       </div>
                     </div>
 
-                    <p className="text-white/80 leading-relaxed mb-4 sm:mb-6 text-sm sm:text-base md:text-lg">
+                    <p className="mb-4 text-sm leading-relaxed text-white/80 sm:mb-6 sm:text-base md:text-lg">
                       {module.description}
                     </p>
 
                     {/* Key Topics */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 mb-4">
+                    <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 md:grid-cols-3">
                       {module.keyTopics.map((topic, i) => (
-                        <div key={i} className="flex items-center gap-2 bg-blue-950/30 rounded-lg px-3 py-2">
-                          <CheckCircle className="w-4 h-4 text-emerald-400" />
-                          <span className="text-white/80 text-sm font-medium">{topic}</span>
+                        <div
+                          key={i}
+                          className="flex items-center gap-2 rounded-lg bg-blue-950/30 px-3 py-2"
+                        >
+                          <CheckCircle className="h-4 w-4 text-emerald-400" />
+                          <span className="text-sm font-medium text-white/80">
+                            {topic}
+                          </span>
                         </div>
                       ))}
                     </div>
 
                     {/* Impact Badge */}
-                    <div className="inline-flex items-center gap-2 bg-emerald-950/40 border border-emerald-500/30 rounded-xl px-4 py-2">
-                      <Award className="w-4 h-4 text-emerald-400" />
-                      <span className="text-emerald-300 text-sm font-semibold">
+                    <div className="inline-flex items-center gap-2 rounded-xl border border-emerald-500/30 bg-emerald-950/40 px-4 py-2">
+                      <Award className="h-4 w-4 text-emerald-400" />
+                      <span className="text-sm font-semibold text-emerald-300">
                         {module.impact}
                       </span>
                     </div>
@@ -229,14 +270,14 @@ export function CourseModulesSection() {
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/10 to-emerald-500/10 rounded-3xl blur-2xl" />
+          <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-blue-500/10 to-emerald-500/10 blur-2xl" />
 
-          <div className="relative bg-black/60 backdrop-blur-2xl border border-blue-500/20 rounded-3xl p-12">
-            <div className="text-center mb-12">
-              <h3 className="text-4xl font-bold text-white mb-4">
+          <div className="relative rounded-3xl border border-blue-500/20 bg-black/60 p-12 backdrop-blur-2xl">
+            <div className="mb-12 text-center">
+              <h3 className="mb-4 text-4xl font-bold text-white">
                 Kit Profissional Completo
               </h3>
-              <p className="text-white/70 text-lg mb-6">
+              <p className="mb-6 text-lg text-white/70">
                 Ferramentas prontas para implementar hoje na sua propriedade
               </p>
               <div className="text-2xl font-bold text-emerald-400">
@@ -244,7 +285,7 @@ export function CourseModulesSection() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {professionalDeliverables.map((deliverable, index) => (
                 <motion.div
                   key={deliverable.title}
@@ -255,20 +296,20 @@ export function CourseModulesSection() {
                     duration: 4,
                     delay: index * 0.7,
                     repeat: Infinity,
-                    ease: "easeInOut",
+                    ease: 'easeInOut',
                   }}
-                  className="text-center group bg-black/40 backdrop-blur-sm border border-blue-500/20 rounded-2xl p-6 hover:border-blue-400/40 transition-all duration-300"
+                  className="group rounded-2xl border border-blue-500/20 bg-black/40 p-6 text-center backdrop-blur-sm transition-all duration-300 hover:border-blue-400/40"
                 >
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500/20 to-emerald-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <deliverable.icon className="w-8 h-8 text-blue-400" />
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/20 to-emerald-500/20 transition-transform duration-300 group-hover:scale-110">
+                    <deliverable.icon className="h-8 w-8 text-blue-400" />
                   </div>
-                  <h4 className="text-white font-bold mb-2">
+                  <h4 className="mb-2 font-bold text-white">
                     {deliverable.title}
                   </h4>
-                  <p className="text-white/70 text-sm mb-3 leading-relaxed">
+                  <p className="mb-3 text-sm leading-relaxed text-white/70">
                     {deliverable.description}
                   </p>
-                  <div className="text-emerald-400 text-sm font-semibold">
+                  <div className="text-sm font-semibold text-emerald-400">
                     {deliverable.value}
                   </div>
                 </motion.div>
@@ -279,7 +320,7 @@ export function CourseModulesSection() {
       </Container>
 
       {/* Floating Knowledge Elements */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="pointer-events-none absolute inset-0">
         {[
           { left: 12, top: 18, delay: 0, duration: 11 },
           { left: 88, top: 25, delay: 1.8, duration: 13 },
@@ -301,9 +342,9 @@ export function CourseModulesSection() {
               duration: item.duration,
               delay: item.delay,
               repeat: Infinity,
-              ease: "easeInOut",
+              ease: 'easeInOut',
             }}
-            className="absolute w-2 h-2 bg-blue-400/20 rounded-full blur-sm"
+            className="absolute h-2 w-2 rounded-full bg-blue-400/20 blur-sm"
             style={{
               left: `${item.left}%`,
               top: `${item.top}%`,

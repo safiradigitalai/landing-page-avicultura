@@ -13,7 +13,7 @@ import {
   Target,
   Flame,
   Lock,
-  MessageSquare
+  MessageSquare,
 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Container'
@@ -25,8 +25,8 @@ const urgencyFactors = {
   timeLeft: {
     days: 8,
     hours: 14,
-    minutes: 32
-  }
+    minutes: 32,
+  },
 }
 
 const exclusiveBenefits = [
@@ -37,7 +37,7 @@ const exclusiveBenefits = [
     value: 'R$ 500 OFF',
     urgency: 'NUNCA MAIS será oferecido esse preço',
     category: 'price',
-    highlight: true
+    highlight: true,
   },
   {
     icon: Users,
@@ -46,7 +46,7 @@ const exclusiveBenefits = [
     value: 'VIP Access',
     urgency: 'Apenas 7 vagas restantes',
     category: 'vip',
-    highlight: true
+    highlight: true,
   },
   {
     icon: Phone,
@@ -55,7 +55,7 @@ const exclusiveBenefits = [
     value: 'R$ 500',
     urgency: 'Restam 27 vagas',
     category: 'mentoring',
-    highlight: false
+    highlight: false,
   },
   {
     icon: Gift,
@@ -64,45 +64,54 @@ const exclusiveBenefits = [
     value: 'Sem prazo',
     urgency: 'Apenas 1ª turma',
     category: 'lifetime',
-    highlight: true
-  }
+    highlight: true,
+  },
 ]
 
 const socialProof = [
   'Carlos M. - Granja 15.000 aves: "Economia de R$ 8.000 no primeiro lote"',
   'Maria S. - Cooperativa: "Mortalidade caiu de 7% para 2,5% em 3 meses"',
   'João P. - Avicultor: "ROI de 400% aplicando os protocolos"',
-  'Ana L. - Técnica: "Finalmente um curso que funciona na prática"'
+  'Ana L. - Técnica: "Finalmente um curso que funciona na prática"',
 ]
 
 const riskReversals = [
   {
     icon: Shield,
     title: 'Garantia Total de 7 Dias',
-    description: 'Se após a primeira live você não estiver 100% satisfeito, devolvemos todo o investimento. Sem perguntas, sem burocracia.'
+    description:
+      'Se após a primeira live você não estiver 100% satisfeito, devolvemos todo o investimento. Sem perguntas, sem burocracia.',
   },
   {
     icon: Target,
     title: 'Compromisso de Resultados',
-    description: 'Se você aplicar os protocolos e não ver melhoria em 60 dias, oferecemos consultoria individual gratuita até resolver.'
+    description:
+      'Se você aplicar os protocolos e não ver melhoria em 60 dias, oferecemos consultoria individual gratuita até resolver.',
   },
   {
     icon: Crown,
     title: 'Acesso Vitalício Garantido',
-    description: 'Mesmo se o preço subir para R$ 1.500+ nas próximas turmas, você nunca perderá seu acesso. É seu para sempre.'
-  }
+    description:
+      'Mesmo se o preço subir para R$ 1.500+ nas próximas turmas, você nunca perderá seu acesso. É seu para sempre.',
+  },
 ]
 
 export function OfferSection() {
-  const [formData, setFormData] = useState({ name: '', phone: '', consent: false })
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    consent: false,
+  })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [timeLeft, setTimeLeft] = useState(urgencyFactors.timeLeft)
-  const [spotsLeft, setSpotsLeft] = useState(urgencyFactors.totalSpots - urgencyFactors.spotsTaken)
+  const [spotsLeft, setSpotsLeft] = useState(
+    urgencyFactors.totalSpots - urgencyFactors.spotsTaken
+  )
 
   // Simulação de countdown real
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(prev => {
+      setTimeLeft((prev) => {
         if (prev.minutes > 0) {
           return { ...prev, minutes: prev.minutes - 1 }
         } else if (prev.hours > 0) {
@@ -120,8 +129,9 @@ export function OfferSection() {
   // Simulação de vagas sendo preenchidas
   useEffect(() => {
     const spotsTimer = setInterval(() => {
-      if (Math.random() < 0.1) { // 10% de chance a cada intervalo
-        setSpotsLeft(prev => Math.max(15, prev - 1)) // Não deixa cair abaixo de 15
+      if (Math.random() < 0.1) {
+        // 10% de chance a cada intervalo
+        setSpotsLeft((prev) => Math.max(15, prev - 1)) // Não deixa cair abaixo de 15
       }
     }, 120000) // A cada 2 minutos
 
@@ -148,34 +158,37 @@ export function OfferSection() {
           bg: 'bg-gradient-to-r from-red-950/40 to-red-900/40',
           border: 'border-red-500/40',
           glow: 'from-red-500/30 to-red-600/30',
-          text: 'text-red-400'
+          text: 'text-red-400',
         }
       case 'vip':
         return {
           bg: 'bg-gradient-to-r from-yellow-950/40 to-yellow-900/40',
           border: 'border-yellow-500/40',
           glow: 'from-yellow-500/30 to-yellow-600/30',
-          text: 'text-yellow-400'
+          text: 'text-yellow-400',
         }
       case 'lifetime':
         return {
           bg: 'bg-gradient-to-r from-purple-950/40 to-purple-900/40',
           border: 'border-purple-500/40',
           glow: 'from-purple-500/30 to-purple-600/30',
-          text: 'text-purple-400'
+          text: 'text-purple-400',
         }
       default:
         return {
           bg: 'bg-gradient-to-r from-emerald-950/40 to-emerald-900/40',
           border: 'border-emerald-500/40',
           glow: 'from-emerald-500/30 to-emerald-600/30',
-          text: 'text-emerald-400'
+          text: 'text-emerald-400',
         }
     }
   }
 
   return (
-    <section id="offer" className="relative overflow-hidden bg-gradient-to-br from-red-950/30 via-black to-yellow-950/20 py-24 sm:py-32">
+    <section
+      id="offer"
+      className="relative overflow-hidden bg-gradient-to-br from-red-950/30 via-black to-yellow-950/20 py-24 sm:py-32"
+    >
       {/* Urgency Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,#dc2626_1px,transparent_1px),radial-gradient(circle_at_70%_30%,#fbbf24_1px,transparent_1px)] bg-[length:80px_80px]" />
@@ -188,10 +201,10 @@ export function OfferSection() {
         }}
         transition={{
           duration: 2,
-          ease: "easeInOut",
+          ease: 'easeInOut',
           repeat: 999999,
         }}
-        className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-red-500/10 via-transparent to-yellow-500/10"
+        className="absolute top-0 left-0 h-full w-full bg-gradient-to-br from-red-500/10 via-transparent to-yellow-500/10"
       />
 
       <Container className="relative">
@@ -199,9 +212,9 @@ export function OfferSection() {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="mb-16 text-center"
         >
           {/* Urgency Alert */}
           <motion.div
@@ -211,17 +224,18 @@ export function OfferSection() {
             transition={{
               duration: 2,
               repeat: 999999,
-              ease: "easeInOut",
+              ease: 'easeInOut',
             }}
-            className="inline-flex items-center gap-3 bg-red-950/50 border border-red-600/50 backdrop-blur-sm rounded-xl px-6 py-4 mb-8"
+            className="mb-8 inline-flex items-center gap-3 rounded-xl border border-red-600/50 bg-red-950/50 px-6 py-4 backdrop-blur-sm"
           >
-            <AlertTriangle className="w-6 h-6 text-red-400 animate-pulse" />
-            <span className="text-red-300 font-bold text-base tracking-wide uppercase">
-              Últimas {spotsLeft} Vagas - Oferta Expira em {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m
+            <AlertTriangle className="h-6 w-6 animate-pulse text-red-400" />
+            <span className="text-base font-bold tracking-wide text-red-300 uppercase">
+              Últimas {spotsLeft} Vagas - Oferta Expira em {timeLeft.days}d{' '}
+              {timeLeft.hours}h {timeLeft.minutes}m
             </span>
           </motion.div>
 
-          <h2 className="text-5xl lg:text-7xl font-black text-white leading-[0.9] tracking-tight mb-8">
+          <h2 className="mb-8 text-5xl leading-[0.9] font-black tracking-tight text-white lg:text-7xl">
             Última Chance para
             <br />
             <span className="bg-gradient-to-r from-red-400 via-red-300 to-yellow-400 bg-clip-text text-transparent">
@@ -229,29 +243,44 @@ export function OfferSection() {
             </span>
           </h2>
 
-          <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto font-light mb-8">
-            Após as 100 vagas, o preço volta para <strong className="text-red-400 font-semibold">R$ 1.497</strong>.
-            Esta é sua única oportunidade de entrar com <strong className="text-yellow-400 font-semibold">condições especiais</strong>.
+          <p className="mx-auto mb-8 max-w-3xl text-xl leading-relaxed font-light text-white/80">
+            Após as 100 vagas, o preço volta para{' '}
+            <strong className="font-semibold text-red-400">R$ 1.497</strong>.
+            Esta é sua única oportunidade de entrar com{' '}
+            <strong className="font-semibold text-yellow-400">
+              condições especiais
+            </strong>
+            .
           </p>
 
           {/* Live Counter */}
-          <div className="bg-gradient-to-r from-red-950/60 to-yellow-950/60 border border-red-500/30 rounded-2xl p-8 backdrop-blur-xl">
-            <div className="grid md:grid-cols-4 gap-6 text-center">
+          <div className="rounded-2xl border border-red-500/30 bg-gradient-to-r from-red-950/60 to-yellow-950/60 p-8 backdrop-blur-xl">
+            <div className="grid gap-6 text-center md:grid-cols-4">
               <div>
-                <div className="text-4xl font-black text-red-400 mb-2">{spotsLeft}</div>
-                <div className="text-white/70 text-sm font-medium">Vagas Restantes</div>
+                <div className="mb-2 text-4xl font-black text-red-400">
+                  {spotsLeft}
+                </div>
+                <div className="text-sm font-medium text-white/70">
+                  Vagas Restantes
+                </div>
               </div>
               <div>
-                <div className="text-4xl font-black text-yellow-400 mb-2">{timeLeft.days}</div>
-                <div className="text-white/70 text-sm font-medium">Dias</div>
+                <div className="mb-2 text-4xl font-black text-yellow-400">
+                  {timeLeft.days}
+                </div>
+                <div className="text-sm font-medium text-white/70">Dias</div>
               </div>
               <div>
-                <div className="text-4xl font-black text-yellow-400 mb-2">{timeLeft.hours}</div>
-                <div className="text-white/70 text-sm font-medium">Horas</div>
+                <div className="mb-2 text-4xl font-black text-yellow-400">
+                  {timeLeft.hours}
+                </div>
+                <div className="text-sm font-medium text-white/70">Horas</div>
               </div>
               <div>
-                <div className="text-4xl font-black text-yellow-400 mb-2">{timeLeft.minutes}</div>
-                <div className="text-white/70 text-sm font-medium">Minutos</div>
+                <div className="mb-2 text-4xl font-black text-yellow-400">
+                  {timeLeft.minutes}
+                </div>
+                <div className="text-sm font-medium text-white/70">Minutos</div>
               </div>
             </div>
           </div>
@@ -263,32 +292,33 @@ export function OfferSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative max-w-5xl mx-auto"
+          className="relative mx-auto max-w-5xl"
         >
-          <div className="absolute -inset-4 bg-gradient-to-r from-red-500/20 to-yellow-500/20 rounded-3xl blur-2xl animate-pulse" />
+          <div className="absolute -inset-4 animate-pulse rounded-3xl bg-gradient-to-r from-red-500/20 to-yellow-500/20 blur-2xl" />
 
-          <div className="relative bg-black/90 backdrop-blur-2xl border border-red-500/30 rounded-3xl p-8 lg:p-12">
-
+          <div className="relative rounded-3xl border border-red-500/30 bg-black/90 p-8 backdrop-blur-2xl lg:p-12">
             {/* Price Shock */}
-            <div className="text-center mb-12">
+            <div className="mb-12 text-center">
               <div className="mb-6">
-                <div className="text-6xl lg:text-8xl font-black text-red-400 mb-2">
+                <div className="mb-2 text-6xl font-black text-red-400 lg:text-8xl">
                   R$ 397
                 </div>
                 <div className="flex items-center justify-center gap-4">
-                  <span className="text-3xl text-white/50 line-through">R$ 1.497</span>
-                  <div className="bg-red-500 text-white px-4 py-2 rounded-full font-bold">
+                  <span className="text-3xl text-white/50 line-through">
+                    R$ 1.497
+                  </span>
+                  <div className="rounded-full bg-red-500 px-4 py-2 font-bold text-white">
                     73% OFF
                   </div>
                 </div>
-                <p className="text-yellow-400 font-bold text-xl mt-4">
+                <p className="mt-4 text-xl font-bold text-yellow-400">
                   Economia de R$ 1.100 - NUNCA mais será oferecido
                 </p>
               </div>
             </div>
 
             {/* Exclusive Benefits */}
-            <div className="space-y-4 mb-12">
+            <div className="mb-12 space-y-4">
               {exclusiveBenefits.map((benefit, index) => {
                 const styles = getBenefitStyle(benefit.category)
                 return (
@@ -301,28 +331,38 @@ export function OfferSection() {
                     className={`group relative`}
                   >
                     {benefit.highlight && (
-                      <div className={`absolute -inset-1 bg-gradient-to-r ${styles.glow} rounded-2xl blur opacity-50 group-hover:opacity-75 transition duration-300`} />
+                      <div
+                        className={`absolute -inset-1 bg-gradient-to-r ${styles.glow} rounded-2xl opacity-50 blur transition duration-300 group-hover:opacity-75`}
+                      />
                     )}
 
-                    <div className={`relative ${styles.bg} border ${styles.border} rounded-2xl p-6 transition-all duration-300`}>
+                    <div
+                      className={`relative ${styles.bg} border ${styles.border} rounded-2xl p-6 transition-all duration-300`}
+                    >
                       <div className="flex items-center gap-6">
-                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-500/20 to-yellow-500/20 flex items-center justify-center">
-                          <benefit.icon className={`w-8 h-8 ${styles.text}`} />
+                        <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-red-500/20 to-yellow-500/20">
+                          <benefit.icon className={`h-8 w-8 ${styles.text}`} />
                         </div>
 
                         <div className="flex-1">
-                          <div className="flex items-start justify-between mb-2">
+                          <div className="mb-2 flex items-start justify-between">
                             <h3 className="text-xl font-bold text-white">
                               {benefit.title}
                             </h3>
-                            <div className={`px-3 py-1 rounded-full border ${styles.border} ${styles.text} text-sm font-bold`}>
+                            <div
+                              className={`rounded-full border px-3 py-1 ${styles.border} ${styles.text} text-sm font-bold`}
+                            >
                               {benefit.value}
                             </div>
                           </div>
 
-                          <p className="text-white/80 mb-2">{benefit.subtitle}</p>
-                          <div className={`flex items-center gap-2 text-sm font-bold ${styles.text}`}>
-                            <AlertTriangle className="w-4 h-4" />
+                          <p className="mb-2 text-white/80">
+                            {benefit.subtitle}
+                          </p>
+                          <div
+                            className={`flex items-center gap-2 text-sm font-bold ${styles.text}`}
+                          >
+                            <AlertTriangle className="h-4 w-4" />
                             <span>{benefit.urgency}</span>
                           </div>
                         </div>
@@ -334,18 +374,18 @@ export function OfferSection() {
             </div>
 
             {/* Social Proof */}
-            <div className="bg-gradient-to-r from-emerald-950/40 to-blue-950/40 border border-emerald-500/20 rounded-2xl p-8 mb-12">
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <MessageSquare className="w-6 h-6 text-emerald-400" />
+            <div className="mb-12 rounded-2xl border border-emerald-500/20 bg-gradient-to-r from-emerald-950/40 to-blue-950/40 p-8">
+              <div className="mb-6 flex items-center justify-center gap-3">
+                <MessageSquare className="h-6 w-6 text-emerald-400" />
                 <h3 className="text-2xl font-bold text-white">
                   O que estão falando
                 </h3>
-                <MessageSquare className="w-6 h-6 text-emerald-400" />
+                <MessageSquare className="h-6 w-6 text-emerald-400" />
               </div>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid gap-4 md:grid-cols-2">
                 {socialProof.map((proof, index) => (
-                  <div key={index} className="bg-black/40 rounded-xl p-4">
-                    <p className="text-white/80 text-sm italic">
+                  <div key={index} className="rounded-xl bg-black/40 p-4">
+                    <p className="text-sm text-white/80 italic">
                       &ldquo;{proof}&rdquo;
                     </p>
                   </div>
@@ -354,52 +394,70 @@ export function OfferSection() {
             </div>
 
             {/* Risk Reversals */}
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="mb-12 grid gap-6 md:grid-cols-3">
               {riskReversals.map((guarantee, index) => (
-                <div key={index} className="bg-blue-950/30 border border-blue-500/20 rounded-2xl p-6 text-center">
-                  <guarantee.icon className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                  <h4 className="text-white font-bold mb-2">{guarantee.title}</h4>
-                  <p className="text-white/70 text-sm">{guarantee.description}</p>
+                <div
+                  key={index}
+                  className="rounded-2xl border border-blue-500/20 bg-blue-950/30 p-6 text-center"
+                >
+                  <guarantee.icon className="mx-auto mb-4 h-12 w-12 text-blue-400" />
+                  <h4 className="mb-2 font-bold text-white">
+                    {guarantee.title}
+                  </h4>
+                  <p className="text-sm text-white/70">
+                    {guarantee.description}
+                  </p>
                 </div>
               ))}
             </div>
 
             {/* Optimized Form */}
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="text-center mb-6">
-                <div className="flex items-center justify-center gap-3 mb-2">
-                  <Flame className="w-8 h-8 text-red-400" />
+              <div className="mb-6 text-center">
+                <div className="mb-2 flex items-center justify-center gap-3">
+                  <Flame className="h-8 w-8 text-red-400" />
                   <h3 className="text-3xl font-bold text-white">
                     Garanta Sua Vaga AGORA
                   </h3>
-                  <Flame className="w-8 h-8 text-red-400" />
+                  <Flame className="h-8 w-8 text-red-400" />
                 </div>
-                <p className="text-red-400 font-semibold">
+                <p className="font-semibold text-red-400">
                   Preencha abaixo e receba acesso imediato à comunidade VIP
                 </p>
               </div>
 
               <div className="grid grid-cols-1 gap-4 sm:gap-6">
                 <div>
-                  <label className="block text-white font-semibold mb-2">Nome Completo *</label>
+                  <label className="mb-2 block font-semibold text-white">
+                    Nome Completo *
+                  </label>
                   <input
                     type="text"
                     placeholder="Digite seu nome completo"
                     value={formData.name}
-                    onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+                    onChange={(e) =>
+                      setFormData((prev) => ({ ...prev, name: e.target.value }))
+                    }
                     required
-                    className="w-full px-4 py-4 rounded-xl border-2 border-gray-600 bg-black/60 text-white placeholder-gray-400 focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all"
+                    className="w-full rounded-xl border-2 border-gray-600 bg-black/60 px-4 py-4 text-white placeholder-gray-400 transition-all focus:border-red-500 focus:ring-2 focus:ring-red-500"
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-semibold mb-2">WhatsApp com DDD *</label>
+                  <label className="mb-2 block font-semibold text-white">
+                    WhatsApp com DDD *
+                  </label>
                   <input
                     type="tel"
                     placeholder="(11) 99999-9999"
                     value={formData.phone}
-                    onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+                    onChange={(e) =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        phone: e.target.value,
+                      }))
+                    }
                     required
-                    className="w-full px-4 py-4 rounded-xl border-2 border-gray-600 bg-black/60 text-white placeholder-gray-400 focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all"
+                    className="w-full rounded-xl border-2 border-gray-600 bg-black/60 px-4 py-4 text-white placeholder-gray-400 transition-all focus:border-red-500 focus:ring-2 focus:ring-red-500"
                   />
                 </div>
               </div>
@@ -409,13 +467,25 @@ export function OfferSection() {
                   type="checkbox"
                   id="consent-final"
                   checked={formData.consent}
-                  onChange={(e) => setFormData(prev => ({ ...prev, consent: e.target.checked }))}
+                  onChange={(e) =>
+                    setFormData((prev) => ({
+                      ...prev,
+                      consent: e.target.checked,
+                    }))
+                  }
                   required
-                  className="mt-1 h-5 w-5 text-red-500 border-2 border-gray-600 rounded focus:ring-red-500 bg-black/60"
+                  className="mt-1 h-5 w-5 rounded border-2 border-gray-600 bg-black/60 text-red-500 focus:ring-red-500"
                 />
-                <label htmlFor="consent-final" className="text-white/80 text-sm">
-                  Concordo em receber informações por WhatsApp e email. Política de{' '}
-                  <a href="/privacy" className="text-red-400 hover:underline font-semibold">
+                <label
+                  htmlFor="consent-final"
+                  className="text-sm text-white/80"
+                >
+                  Concordo em receber informações por WhatsApp e email. Política
+                  de{' '}
+                  <a
+                    href="/privacy"
+                    className="font-semibold text-red-400 hover:underline"
+                  >
                     Privacidade
                   </a>
                 </label>
@@ -428,39 +498,43 @@ export function OfferSection() {
                 <Button
                   type="submit"
                   size="xl"
-                  className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-black text-lg sm:text-xl md:text-2xl py-6 sm:py-8 rounded-2xl transition-all duration-300 shadow-2xl"
+                  className="w-full rounded-2xl bg-gradient-to-r from-red-600 to-red-700 py-6 text-lg font-black text-white shadow-2xl transition-all duration-300 hover:from-red-700 hover:to-red-800 sm:py-8 sm:text-xl md:text-2xl"
                   loading={isSubmitting}
-                  disabled={!formData.name || !formData.phone || !formData.consent}
+                  disabled={
+                    !formData.name || !formData.phone || !formData.consent
+                  }
                 >
                   {isSubmitting ? (
                     <div className="flex items-center gap-3">
-                      <div className="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      <div className="h-6 w-6 animate-spin rounded-full border-2 border-white/30 border-t-white" />
                       Processando...
                     </div>
                   ) : (
                     <div className="flex items-center justify-center gap-2 sm:gap-3">
-                      <Flame className="w-6 h-6 sm:w-8 sm:h-8" />
-                      <span className="hidden sm:inline">QUERO MINHA VAGA DE FUNDADOR - R$ 397</span>
+                      <Flame className="h-6 w-6 sm:h-8 sm:w-8" />
+                      <span className="hidden sm:inline">
+                        QUERO MINHA VAGA DE FUNDADOR - R$ 397
+                      </span>
                       <span className="sm:hidden">GARANTIR VAGA - R$ 397</span>
-                      <Lock className="w-4 h-4 sm:w-6 sm:h-6" />
+                      <Lock className="h-4 w-4 sm:h-6 sm:w-6" />
                     </div>
                   )}
                 </Button>
               </motion.div>
             </form>
 
-            <div className="text-center mt-8">
-              <div className="grid md:grid-cols-3 gap-4 text-sm">
+            <div className="mt-8 text-center">
+              <div className="grid gap-4 text-sm md:grid-cols-3">
                 <div className="flex items-center justify-center gap-2 text-emerald-400">
-                  <Shield className="w-4 h-4" />
+                  <Shield className="h-4 w-4" />
                   <span>Processamento 100% Seguro</span>
                 </div>
                 <div className="flex items-center justify-center gap-2 text-yellow-400">
-                  <Timer className="w-4 h-4" />
+                  <Timer className="h-4 w-4" />
                   <span>Acesso Liberado em 5 Minutos</span>
                 </div>
                 <div className="flex items-center justify-center gap-2 text-red-400">
-                  <Lock className="w-4 h-4" />
+                  <Lock className="h-4 w-4" />
                   <span>Dados Protegidos (SSL)</span>
                 </div>
               </div>
@@ -470,7 +544,7 @@ export function OfferSection() {
       </Container>
 
       {/* Floating Urgency Elements */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="pointer-events-none absolute inset-0">
         {[
           { left: 5, top: 20, delay: 0, duration: 8 },
           { left: 95, top: 30, delay: 1, duration: 10 },
@@ -489,9 +563,9 @@ export function OfferSection() {
               duration: item.duration,
               delay: item.delay,
               repeat: 999999,
-              ease: "easeInOut",
+              ease: 'easeInOut',
             }}
-            className="absolute w-2 h-2 bg-red-500/60 rounded-full blur-sm"
+            className="absolute h-2 w-2 rounded-full bg-red-500/60 blur-sm"
             style={{
               left: `${item.left}%`,
               top: `${item.top}%`,
