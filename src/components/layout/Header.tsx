@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   Menu,
-  X,
   Stethoscope,
   CheckCircle,
   Shield,
@@ -150,7 +149,7 @@ export function Header() {
                     className="flex items-center gap-3 text-white/80 hover:text-emerald-400 py-3 text-base font-medium transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    <item.icon className="w-5 h-5 text-emerald-400" />
+                    {item.icon && <item.icon className="w-5 h-5 text-emerald-400" />}
                     {item.label}
                   </Link>
                 ))}

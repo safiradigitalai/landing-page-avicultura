@@ -2,10 +2,7 @@
 
 import { motion } from 'framer-motion'
 import {
-  Video,
-  MessageSquare,
   Phone,
-  Calendar,
   Star,
   Users,
   PlayCircle,
@@ -100,7 +97,7 @@ export function HowItWorksSection() {
         transition={{
           duration: 10,
           ease: "easeInOut",
-          repeat: Infinity,
+          repeat: 999999,
         }}
         className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-500/5 via-transparent to-cyan-500/5"
       />
@@ -226,7 +223,7 @@ export function HowItWorksSection() {
                 }}
                 transition={{
                   duration: 3,
-                  repeat: Infinity,
+                  repeat: 999999,
                   ease: "easeInOut",
                 }}
                 className="w-20 h-20 mx-auto mb-8 rounded-full bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center"
@@ -252,7 +249,7 @@ export function HowItWorksSection() {
                   transition={{
                     duration: 3,
                     delay: index * 0.8,
-                    repeat: Infinity,
+                    repeat: 999999,
                     ease: "easeInOut",
                   }}
                   className="text-center bg-black/40 backdrop-blur-sm border border-yellow-500/20 rounded-2xl p-6 hover:border-yellow-400/40 transition-all duration-300"
@@ -301,7 +298,7 @@ export function HowItWorksSection() {
             transition={{
               duration: item.duration,
               delay: item.delay,
-              repeat: Infinity,
+              repeat: 999999,
               ease: "easeInOut",
             }}
             className="absolute w-2 h-2 bg-purple-400/30 rounded-full blur-sm"

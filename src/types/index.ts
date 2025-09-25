@@ -1,3 +1,5 @@
+import React from 'react'
+
 export interface Feature {
   id: string
   title: string
@@ -30,7 +32,7 @@ export interface NavigationItem {
   label: string
   href: string
   external?: boolean
-  icon?: any
+  icon?: React.ComponentType<{ className?: string }>
 }
 
 export interface SocialLink {

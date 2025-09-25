@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Shield, TrendingUp, Users, Award, ChevronRight, Phone } from 'lucide-react'
+import { Shield, Users, Award, ChevronRight, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Container'
 

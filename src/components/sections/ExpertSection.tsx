@@ -2,21 +2,17 @@
 
 import { motion } from 'framer-motion'
 import {
-  Award,
-  BookOpen,
-  Users,
-  TrendingUp,
-  CheckCircle,
   GraduationCap,
   Stethoscope,
   Trophy,
   Target,
   Star,
-  Shield,
   Zap,
   Crown,
   Heart,
-  Globe
+  Globe,
+  Shield,
+  Users
 } from 'lucide-react'
 import { Container } from '@/components/ui/Container'
 
@@ -94,10 +90,10 @@ const impactMetrics = [
 ]
 
 const testimonialHighlights = [
-  '"Protocolo do Dr. Carlos reduziu nossa mortalidade de 8% para 3% em 6 meses"',
-  '"ROI de 400% no primeiro ano aplicando as metodologias ensinadas"',
-  '"Finalmente encontrei alguém que entende o dia a dia da granja"',
-  '"Investimento que se pagou no primeiro lote. Resultados impressionantes"'
+  '&ldquo;Protocolo do Dr. Carlos reduziu nossa mortalidade de 8% para 3% em 6 meses&rdquo;',
+  '&ldquo;ROI de 400% no primeiro ano aplicando as metodologias ensinadas&rdquo;',
+  '&ldquo;Finalmente encontrei alguém que entende o dia a dia da granja&rdquo;',
+  '&ldquo;Investimento que se pagou no primeiro lote. Resultados impressionantes&rdquo;'
 ]
 
 export function ExpertSection() {
@@ -221,7 +217,7 @@ export function ExpertSection() {
 
                 <div className="bg-black/60 border border-blue-500/20 rounded-2xl p-6">
                   <p className="text-white/80 leading-relaxed text-lg italic">
-                    "{expertProfile.quote}"
+                    &ldquo;{expertProfile.quote}&rdquo;
                   </p>
                 </div>
               </div>

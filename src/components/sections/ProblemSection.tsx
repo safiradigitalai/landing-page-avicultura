@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { TrendingDown, AlertCircle, Clock, DollarSign, Zap, Target } from 'lucide-react'
+import { TrendingDown, AlertCircle, Clock, Zap } from 'lucide-react'
 import { Container } from '@/components/ui/Container'
 
 const criticalProblems = [
@@ -53,7 +53,7 @@ export function ProblemSection() {
           transition={{
             duration: 4,
             ease: "easeInOut",
-            repeat: Infinity,
+            repeat: 999999,
           }}
           className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-red-500/10 via-transparent to-orange-500/10"
         />
@@ -96,7 +96,7 @@ export function ProblemSection() {
             }}
             transition={{
               duration: 3,
-              repeat: Infinity,
+              repeat: 999999,
               ease: "easeInOut",
             }}
             className="bg-red-950/40 border border-red-500/30 rounded-2xl p-6 backdrop-blur-xl"
@@ -209,7 +209,7 @@ export function ProblemSection() {
               }}
               transition={{
                 duration: 2,
-                repeat: Infinity,
+                repeat: 999999,
                 ease: "easeInOut",
               }}
               className="w-20 h-20 mx-auto mb-8 rounded-full bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center"
@@ -258,7 +258,7 @@ export function ProblemSection() {
             transition={{
               duration: item.duration,
               delay: item.delay,
-              repeat: Infinity,
+              repeat: 999999,
               ease: "easeInOut",
             }}
             className="absolute w-1 h-1 bg-red-500/40 rounded-full"

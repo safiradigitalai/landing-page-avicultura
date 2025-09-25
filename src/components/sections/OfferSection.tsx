@@ -3,16 +3,11 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import {
-  CheckCircle,
-  Clock,
   Users,
   Phone,
-  Zap,
-  TrendingUp,
   Gift,
   AlertTriangle,
   Crown,
-  Star,
   Shield,
   Timer,
   Target,
@@ -351,7 +346,7 @@ export function OfferSection() {
                 {socialProof.map((proof, index) => (
                   <div key={index} className="bg-black/40 rounded-xl p-4">
                     <p className="text-white/80 text-sm italic">
-                      "{proof}"
+                      &ldquo;{proof}&rdquo;
                     </p>
                   </div>
                 ))}

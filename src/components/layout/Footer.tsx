@@ -10,13 +10,11 @@ import {
   Award,
   CheckCircle,
   Clock,
-  Users,
   Heart,
   Stethoscope,
   Leaf
 } from 'lucide-react'
 import { Container } from '@/components/ui/Container'
-import type { SocialLink, NavigationItem } from '@/types'
 
 const contactInfo = [
   {
@@ -126,7 +124,7 @@ export function Footer() {
           >
             <div className="bg-black/60 backdrop-blur-xl border border-emerald-500/20 rounded-3xl p-8">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-                {trustIndicators.map((indicator, index) => (
+                {trustIndicators.map((indicator) => (
                   <div key={indicator.title} className="text-center">
                     <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 flex items-center justify-center mx-auto mb-3">
                       <indicator.icon className="w-6 h-6 text-emerald-400" />
@@ -235,7 +233,7 @@ export function Footer() {
                 Suporte Especializado
               </h4>
               <div className="space-y-4">
-                {contactInfo.map((contact, index) => (
+                {contactInfo.map((contact) => (
                   <div key={contact.type} className={`p-4 rounded-2xl border transition-all duration-300 hover:scale-105 ${
                     contact.primary
                       ? 'bg-emerald-500/10 border-emerald-400/30 hover:border-emerald-400/50'
