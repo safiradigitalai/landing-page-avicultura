@@ -136,7 +136,14 @@ export function FAQSection() {
   }
 
   const getCategoryStyle = (category: string) => {
-    const config = categoryConfig[category]
+    const config = categoryConfig[category as keyof typeof categoryConfig]
+    if (!config) {
+      return {
+        icon: HelpCircle,
+        color: 'text-slate-400',
+        count: 0
+      }
+    }
     return {
       icon: config.icon,
       color: config.color,
