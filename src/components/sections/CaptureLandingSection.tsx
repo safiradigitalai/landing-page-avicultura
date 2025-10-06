@@ -34,10 +34,10 @@ export function CaptureLandingSection() {
       <div className="absolute inset-0 hidden lg:block">
         {/* Lado Esquerdo com Background de Galinhas P&B */}
         <div
-          className="absolute inset-0 bg-left-bottom bg-no-repeat"
+          className="absolute inset-0 bg-right-bottom bg-no-repeat"
           style={{
             backgroundImage: `url('/galinhasnovas.jpeg')`,
-            backgroundSize: '80%',
+            backgroundSize: '120%',
             filter: 'grayscale(100%) contrast(1.2) brightness(0.9)',
             clipPath: 'polygon(0% 0%, 45% 0%, 25% 100%, 0% 100%)',
           }}
