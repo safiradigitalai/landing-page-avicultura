@@ -3,7 +3,7 @@
 import { CaptureLandingSection } from '@/components/sections/CaptureLandingSection'
 import { useEffect } from 'react'
 
-export default function HomePage() {
+export default function CapturePage() {
   useEffect(() => {
     // Esconder header e footer
     const header = document.querySelector('header')
