@@ -58,36 +58,36 @@ export function CaptureLandingSection() {
       <div className="relative z-10 flex flex-col lg:grid lg:h-screen lg:grid-cols-12">
         {/* Coluna Esquerda - Bullets Informativos */}
         <div className="relative px-6 lg:col-span-4 lg:overflow-hidden lg:pl-6">
-          <div className="relative z-10 flex flex-col items-start justify-center py-8 lg:h-full lg:min-h-0 lg:px-6">
-            <div className="w-full max-w-lg space-y-6 lg:space-y-8">
-              {/* Header Principal - Centralizado e Maior */}
-              <div className="space-y-5 text-center">
-                <div className="space-y-3">
+          <div className="relative z-10 flex flex-col items-start justify-center py-8 lg:h-full lg:min-h-0 lg:px-4 xl:px-6">
+            <div className="w-full max-w-lg space-y-4 lg:space-y-5">
+              {/* Header Principal - Alinhado à Esquerda */}
+              <div className="space-y-3 text-left">
+                <div className="space-y-1.5">
                   <h1
-                    className="text-4xl leading-none font-black tracking-tight text-white lg:text-5xl"
+                    className="text-lg leading-tight font-bold tracking-tight text-white lg:text-xl"
                     style={{
                       textShadow:
                         '0 2px 10px rgba(0,0,0,0.5), 0 4px 20px rgba(0,0,0,0.3)',
                     }}
                   >
-                    Mentoria Completa
+                    Curso Completo
                   </h1>
                   <h2
-                    className="text-3xl leading-none font-black text-yellow-300 lg:text-4xl"
+                    className="text-2xl leading-tight font-black text-white lg:text-3xl xl:text-4xl"
                     style={{
                       textShadow:
                         '0 2px 10px rgba(0,0,0,0.5), 0 4px 20px rgba(0,0,0,0.3)',
                     }}
                   >
-                    Sanidade que Vira Lucro
+                    Ganhando <span className="text-yellow-300">Dinheiro</span> com <span className="text-yellow-300">Galinhas Caipiras</span>
                   </h2>
                 </div>
 
-                {/* Selos/Badges - Maiores e Centralizados */}
-                <div className="flex flex-wrap items-center justify-center gap-3 pt-3">
-                  <span className="inline-flex items-center gap-2 rounded-lg border-2 border-white/40 bg-white/15 px-5 py-2 text-sm font-bold tracking-wide text-white uppercase drop-shadow-xl backdrop-blur-sm">
+                {/* Selos/Badges - Alinhados à Esquerda */}
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-white/15 px-3 py-1 text-xs font-bold tracking-wide text-white uppercase drop-shadow-lg backdrop-blur-sm">
                     <svg
-                      className="h-4 w-4"
+                      className="h-3 w-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -95,9 +95,9 @@ export function CaptureLandingSection() {
                     </svg>
                     Online
                   </span>
-                  <span className="inline-flex animate-pulse items-center gap-2 rounded-lg border-2 border-yellow-300 bg-yellow-300/20 px-5 py-2 text-sm font-bold tracking-wide text-yellow-300 uppercase drop-shadow-xl backdrop-blur-sm">
+                  <span className="inline-flex animate-pulse items-center gap-1.5 rounded-md border border-yellow-300 bg-yellow-300/20 px-3 py-1 text-xs font-bold tracking-wide text-yellow-300 uppercase drop-shadow-lg backdrop-blur-sm">
                     <svg
-                      className="h-4 w-4"
+                      className="h-3 w-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -109,9 +109,9 @@ export function CaptureLandingSection() {
                     </svg>
                     Vagas Limitadas
                   </span>
-                  <span className="inline-flex items-center gap-2 rounded-lg border-2 border-white/40 bg-white/15 px-5 py-2 text-sm font-bold tracking-wide text-white uppercase drop-shadow-xl backdrop-blur-sm">
+                  <span className="inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-white/15 px-3 py-1 text-xs font-bold tracking-wide text-white uppercase drop-shadow-lg backdrop-blur-sm">
                     <svg
-                      className="h-4 w-4"
+                      className="h-3 w-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -122,138 +122,13 @@ export function CaptureLandingSection() {
                 </div>
               </div>
 
-              {/* Divisor - Centralizado */}
-              <div className="mx-auto h-1.5 w-24 rounded-full bg-yellow-300 drop-shadow-lg"></div>
-
-              {/* Exclusivo Primeira Turma */}
-              <div className="space-y-4">
-                <h3
-                  className="text-center text-xl font-black tracking-tight text-white uppercase lg:text-2xl"
-                  style={{
-                    textShadow:
-                      '0 2px 8px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.2)',
-                  }}
-                >
-                  Exclusivo Para a Primeira Turma
-                </h3>
-
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <svg
-                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-yellow-300"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <p className="text-sm leading-relaxed font-medium text-white drop-shadow-md">
-                      Acesso vitalício às aulas gravadas (apenas para quem
-                      entrar na 1ª turma).
-                    </p>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <svg
-                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-yellow-300"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <p className="text-sm leading-relaxed font-medium text-white drop-shadow-md">
-                      Grupo de network vitalício no WhatsApp com o expert e
-                      outros produtores.
-                    </p>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <svg
-                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-yellow-300"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <p className="text-sm leading-relaxed font-medium text-white drop-shadow-md">
-                      Encontros mensais exclusivos, sem custo adicional.
-                    </p>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <svg
-                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-yellow-300"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <p className="text-sm leading-relaxed font-medium text-white drop-shadow-md">
-                      Consultoria individual para os 30 primeiros inscritos.
-                    </p>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <svg
-                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-yellow-300"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <p className="text-sm leading-relaxed font-medium text-white drop-shadow-md">
-                      Planilha exclusiva de controle de produção e sanidade,
-                      elaborada pelo expert.
-                    </p>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <svg
-                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-yellow-300"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <p className="text-sm leading-relaxed font-medium text-white drop-shadow-md">
-                      Valor promocional de{' '}
-                      <span className="font-bold text-yellow-300">R$ 397</span>{' '}
-                      (nas próximas turmas será R$ 897).
-                    </p>
-                  </div>
-                </div>
-              </div>
-
               {/* Divisor */}
-              <div className="mx-auto h-1.5 w-24 rounded-full bg-white/40 drop-shadow-lg"></div>
+              <div className="h-1 w-20 rounded-full bg-yellow-300 drop-shadow-lg"></div>
 
               {/* O que você vai aprender */}
-              <div className="space-y-4">
+              <div className="space-y-2.5">
                 <h3
-                  className="text-center text-xl font-black tracking-tight text-white uppercase lg:text-2xl"
+                  className="text-left text-base font-black tracking-tight text-white uppercase lg:text-lg"
                   style={{
                     textShadow:
                       '0 2px 8px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.2)',
@@ -262,10 +137,10 @@ export function CaptureLandingSection() {
                   O que você vai aprender:
                 </h3>
 
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
+                <div className="space-y-2">
+                  <div className="flex items-start gap-2">
                     <svg
-                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-yellow-300"
+                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -275,15 +150,14 @@ export function CaptureLandingSection() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <p className="text-sm leading-relaxed font-medium text-white drop-shadow-md">
-                      Produção acima de 90% com aves saudáveis e livres de
-                      doenças.
+                    <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
+                      Garantir produção acima de 90% com aves saudáveis e livres de doenças.
                     </p>
                   </div>
 
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-2">
                     <svg
-                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-yellow-300"
+                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -293,15 +167,14 @@ export function CaptureLandingSection() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <p className="text-sm leading-relaxed font-medium text-white drop-shadow-md">
-                      Implante um negócio lucrativo na avicultura caipira com
-                      baixo investimento e pouca mão de obra.
+                    <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
+                      Implantar um negócio lucrativo na avicultura caipira com baixo investimento e pouca mão de obra.
                     </p>
                   </div>
 
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-2">
                     <svg
-                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-yellow-300"
+                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -311,14 +184,14 @@ export function CaptureLandingSection() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <p className="text-sm leading-relaxed font-medium text-white drop-shadow-md">
-                      Reduza perdas com mortalidade, doenças e canibalismo.
+                    <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
+                      Reduzir perdas por mortalidade, doenças e canibalismo.
                     </p>
                   </div>
 
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-2">
                     <svg
-                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-yellow-300"
+                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -328,15 +201,14 @@ export function CaptureLandingSection() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <p className="text-sm leading-relaxed font-medium text-white drop-shadow-md">
-                      Aprenda a produzir suas próprias rações e economize no
-                      custo de produção.
+                    <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
+                      Produzir suas próprias rações e economizar no custo de produção.
                     </p>
                   </div>
 
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-2">
                     <svg
-                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-yellow-300"
+                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -346,9 +218,130 @@ export function CaptureLandingSection() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <p className="text-sm leading-relaxed font-medium text-white drop-shadow-md">
-                      Estrutura de criação com custo mínimo, dentro das normas
-                      técnicas de bem-estar animal.
+                    <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
+                      Estruturar uma criação eficiente e sustentável, dentro das normas de bem-estar animal.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Divisor */}
+              <div className="h-1 w-20 rounded-full bg-white/40 drop-shadow-lg"></div>
+
+              {/* Exclusivo Primeira Turma */}
+              <div className="space-y-2.5">
+                <h3
+                  className="text-left text-base font-black tracking-tight text-white uppercase lg:text-lg"
+                  style={{
+                    textShadow:
+                      '0 2px 8px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.2)',
+                  }}
+                >
+                  Exclusivo Para a <span className="text-yellow-300">Primeira Turma</span>
+                </h3>
+
+                <div className="space-y-2">
+                  <div className="flex items-start gap-2">
+                    <svg
+                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
+                      Acesso vitalício às aulas gravadas (somente para quem entrar na <span className="font-bold text-yellow-300">1ª turma</span>).
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <svg
+                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
+                      Grupo de network vitalício no WhatsApp com o expert e outros produtores.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <svg
+                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
+                      Encontros mensais exclusivos, sem custo adicional.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <svg
+                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
+                      Consultorias individuais limitadas para os primeiros inscritos.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <svg
+                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
+                      Planilha exclusiva de controle de produção e sanidade, elaborada pelo expert.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <svg
+                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
+                      Valor promocional de{' '}
+                      <span className="font-bold text-yellow-300">R$ 497</span>{' '}
+                      (nas próximas turmas será R$ 997).
                     </p>
                   </div>
                 </div>
@@ -381,35 +374,35 @@ export function CaptureLandingSection() {
         </div>
 
         {/* Coluna Direita - Formulário e CTAs */}
-        <div className="flex items-center px-6 py-8 lg:col-span-4 lg:py-0">
-          <div className="w-full max-w-lg space-y-5 lg:space-y-6">
+        <div className="flex items-center px-6 py-8 lg:col-span-4 lg:px-4 lg:py-0 xl:px-6">
+          <div className="w-full max-w-lg space-y-4">
             {/* Header Principal */}
-            <div className="space-y-4">
-              <h2 className="text-2xl leading-tight font-black tracking-tight text-white drop-shadow-lg lg:text-3xl">
-                Produza acima de 90% com aves saudáveis e transforme sua criação
-                em lucro.
-              </h2>
+            <div className="space-y-3">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-transparent rounded-lg blur-sm"></div>
+                <h2 className="relative text-xl leading-tight font-black tracking-tight text-white drop-shadow-lg lg:text-2xl xl:text-3xl border-l-4 border-yellow-400 pl-4 py-2 bg-gradient-to-r from-black/30 to-transparent rounded-r-lg backdrop-blur-sm">
+                  Construa um negócio de galinhas caipiras que dá resultado e gera renda de verdade.
+                </h2>
+              </div>
 
-              <p className="text-sm leading-relaxed font-medium text-white/90 drop-shadow-sm lg:text-base">
-                Descubra como transformar sua criação em um negócio lucrativo,
-                reduzindo perdas e prevenindo doenças com técnicas comprovadas
-                de manejo sanitário.
+              <p className="text-sm leading-relaxed font-medium text-white/95 drop-shadow-md lg:text-base">
+                Descubra o passo a passo para transformar sua criação em um negócio lucrativo — do planejamento ao manejo — com baixo investimento, sanidade garantida e resultados consistentes.
               </p>
             </div>
 
             {/* Divisor */}
-            <div className="h-1 w-16 bg-yellow-300"></div>
+            <div className="h-0.5 w-12 bg-yellow-300"></div>
 
             {/* Call to Action */}
-            <div className="space-y-4">
-              <p className="text-base font-bold tracking-wide text-white uppercase drop-shadow-md lg:text-lg">
-                Faça sua pré inscrição no formulário abaixo{' '}
-                <span className="text-yellow-300">(vagas limitadas)</span>
+            <div className="space-y-3">
+              <p className="text-xs font-semibold tracking-normal text-white drop-shadow-md lg:text-sm">
+                Faça sua pré-inscrição no formulário abaixo{' '}
+                <span className="text-yellow-300 font-bold">(vagas limitadas)</span>
               </p>
 
               {/* Formulário */}
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="space-y-3">
+              <form onSubmit={handleSubmit} className="space-y-3">
+                <div className="space-y-2.5">
                   <input
                     type="text"
                     placeholder="Digite seu nome"
@@ -418,7 +411,7 @@ export function CaptureLandingSection() {
                       setFormData((prev) => ({ ...prev, name: e.target.value }))
                     }
                     required
-                    className="w-full rounded-lg border border-white/30 bg-white/10 px-5 py-4 font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:ring-2 focus:ring-yellow-300/20 focus:outline-none"
+                    className="w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-sm font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:ring-2 focus:ring-yellow-300/20 focus:outline-none"
                   />
                   <input
                     type="text"
@@ -431,15 +424,14 @@ export function CaptureLandingSection() {
                       }))
                     }
                     required
-                    className="w-full rounded-lg border border-white/30 bg-white/10 px-5 py-4 font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:ring-2 focus:ring-yellow-300/20 focus:outline-none"
+                    className="w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-sm font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:ring-2 focus:ring-yellow-300/20 focus:outline-none"
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full rounded-lg bg-yellow-300 px-6 py-4 text-base font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-400 lg:text-lg"
+                  className="w-full rounded-lg bg-yellow-400 px-5 py-3.5 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500 lg:text-base"
                   loading={isSubmitting}
-                  disabled={!formData.name || !formData.email}
                 >
                   {isSubmitting
                     ? 'PROCESSANDO...'
@@ -448,8 +440,8 @@ export function CaptureLandingSection() {
               </form>
 
               {/* Texto pós-formulário */}
-              <div className="rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
-                <p className="text-center text-sm leading-relaxed text-white/80 drop-shadow-sm">
+              <div className="rounded-lg border border-white/10 bg-white/5 p-3 backdrop-blur-sm">
+                <p className="text-center text-xs leading-relaxed text-white/80 drop-shadow-sm lg:text-sm">
                   Após preencher o formulário, nossa equipe entrará em contato
                   pelo WhatsApp para confirmar sua inscrição.
                 </p>
@@ -457,23 +449,24 @@ export function CaptureLandingSection() {
             </div>
 
             {/* Condição Especial */}
-            <div className="space-y-3 rounded-lg border-2 border-yellow-300/50 bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 p-5 backdrop-blur-sm">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 text-2xl text-yellow-300">⚠️</div>
-                <div className="space-y-2">
-                  <p className="text-base leading-tight font-black text-white drop-shadow-md lg:text-lg">
-                    Condição especial somente para a primeira turma:
+            <div className="space-y-2 rounded-lg border-2 border-yellow-300/50 bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 p-3.5 backdrop-blur-sm">
+              <div className="flex items-start gap-2.5">
+                <div className="flex-shrink-0 text-xl text-yellow-300">⚠️</div>
+                <div className="space-y-1.5">
+                  <p className="text-sm leading-tight font-black text-white drop-shadow-md lg:text-base">
+                    Condição especial somente para a <span className="text-yellow-300">primeira turma</span>:
                   </p>
-                  <p className="text-sm leading-relaxed text-white drop-shadow-sm lg:text-base">
+                  <p className="text-xs leading-relaxed text-white drop-shadow-sm lg:text-sm">
                     De{' '}
-                    <span className="text-white/60 line-through">R$ 897</span>{' '}
+                    <span className="text-white/60 line-through">R$ 997</span>{' '}
                     por apenas{' '}
-                    <span className="text-xl font-black text-yellow-300">
-                      R$ 397
-                    </span>
-                    .
+                    <span className="text-lg font-black text-yellow-300">
+                      R$ 497
+                    </span>{' '}
+                    ou até{' '}
+                    <span className="font-bold text-yellow-300">12x de R$ 51,45</span>.
                   </p>
-                  <p className="text-sm font-bold tracking-wide text-yellow-300 uppercase drop-shadow-md">
+                  <p className="text-xs font-bold tracking-wide text-yellow-300 uppercase drop-shadow-md">
                     Essa condição nunca mais será repetida.
                   </p>
                 </div>
