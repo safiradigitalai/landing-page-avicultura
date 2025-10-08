@@ -79,7 +79,9 @@ export function CaptureLandingSection() {
                         '0 2px 10px rgba(0,0,0,0.5), 0 4px 20px rgba(0,0,0,0.3)',
                     }}
                   >
-                    Ganhando <span className="text-yellow-300">Dinheiro</span> com <span className="text-yellow-300">Galinhas Caipiras</span>
+                    Ganhando <span className="text-yellow-300">Dinheiro</span>{' '}
+                    com{' '}
+                    <span className="text-yellow-300">Galinhas Caipiras</span>
                   </h2>
                 </div>
 
@@ -151,7 +153,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Garantir produção acima de 90% com aves saudáveis e livres de doenças.
+                      Garantir produção acima de 90% com aves saudáveis e livres
+                      de doenças.
                     </p>
                   </div>
 
@@ -168,7 +171,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Implantar um negócio lucrativo na avicultura caipira com baixo investimento e pouca mão de obra.
+                      Implantar um negócio lucrativo na avicultura caipira com
+                      baixo investimento e pouca mão de obra.
                     </p>
                   </div>
 
@@ -202,7 +206,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Produzir suas próprias rações e economizar no custo de produção.
+                      Produzir suas próprias rações e economizar no custo de
+                      produção.
                     </p>
                   </div>
 
@@ -219,7 +224,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Estruturar uma criação eficiente e sustentável, dentro das normas de bem-estar animal.
+                      Estruturar uma criação eficiente e sustentável, dentro das
+                      normas de bem-estar animal.
                     </p>
                   </div>
                 </div>
@@ -237,7 +243,8 @@ export function CaptureLandingSection() {
                       '0 2px 8px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.2)',
                   }}
                 >
-                  Exclusivo Para a <span className="text-yellow-300">Primeira Turma</span>
+                  Exclusivo Para a{' '}
+                  <span className="text-yellow-300">Primeira Turma</span>
                 </h3>
 
                 <div className="space-y-2">
@@ -254,7 +261,12 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Acesso vitalício às aulas gravadas (somente para quem entrar na <span className="font-bold text-yellow-300">1ª turma</span>).
+                      Acesso vitalício às aulas gravadas (somente para quem
+                      entrar na{' '}
+                      <span className="font-bold text-yellow-300">
+                        1ª turma
+                      </span>
+                      ).
                     </p>
                   </div>
 
@@ -271,7 +283,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Grupo de network vitalício no WhatsApp com o expert e outros produtores.
+                      Grupo de network vitalício no WhatsApp com o expert e
+                      outros produtores.
                     </p>
                   </div>
 
@@ -305,7 +318,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Consultorias individuais limitadas para os primeiros inscritos.
+                      Consultorias individuais limitadas para os primeiros
+                      inscritos.
                     </p>
                   </div>
 
@@ -322,7 +336,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Planilha exclusiva de controle de produção e sanidade, elaborada pelo expert.
+                      Planilha exclusiva de controle de produção e sanidade,
+                      elaborada pelo expert.
                     </p>
                   </div>
 
@@ -379,14 +394,17 @@ export function CaptureLandingSection() {
             {/* Header Principal */}
             <div className="space-y-3">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-transparent rounded-lg blur-sm"></div>
-                <h2 className="relative text-xl leading-tight font-black tracking-tight text-white drop-shadow-lg lg:text-2xl xl:text-3xl border-l-4 border-yellow-400 pl-4 py-2 bg-gradient-to-r from-black/30 to-transparent rounded-r-lg backdrop-blur-sm">
-                  Construa um negócio de galinhas caipiras que dá resultado e gera renda de verdade.
+                <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-yellow-500/20 to-transparent blur-sm"></div>
+                <h2 className="relative rounded-r-lg border-l-4 border-yellow-400 bg-gradient-to-r from-black/30 to-transparent py-2 pl-4 text-xl leading-tight font-black tracking-tight text-white drop-shadow-lg backdrop-blur-sm lg:text-2xl xl:text-3xl">
+                  Construa um negócio de galinhas caipiras que dá resultado e
+                  gera renda de verdade.
                 </h2>
               </div>
 
               <p className="text-sm leading-relaxed font-medium text-white/95 drop-shadow-md lg:text-base">
-                Descubra o passo a passo para transformar sua criação em um negócio lucrativo — do planejamento ao manejo — com baixo investimento, sanidade garantida e resultados consistentes.
+                Descubra o passo a passo para transformar sua criação em um
+                negócio lucrativo — do planejamento ao manejo — com baixo
+                investimento, sanidade garantida e resultados consistentes.
               </p>
             </div>
 
@@ -397,7 +415,9 @@ export function CaptureLandingSection() {
             <div className="space-y-3">
               <p className="text-xs font-semibold tracking-normal text-white drop-shadow-md lg:text-sm">
                 Faça sua pré-inscrição no formulário abaixo{' '}
-                <span className="text-yellow-300 font-bold">(vagas limitadas)</span>
+                <span className="font-bold text-yellow-300">
+                  (vagas limitadas)
+                </span>
               </p>
 
               {/* Formulário */}
@@ -454,7 +474,8 @@ export function CaptureLandingSection() {
                 <div className="flex-shrink-0 text-xl text-yellow-300">⚠️</div>
                 <div className="space-y-1.5">
                   <p className="text-sm leading-tight font-black text-white drop-shadow-md lg:text-base">
-                    Condição especial somente para a <span className="text-yellow-300">primeira turma</span>:
+                    Condição especial somente para a{' '}
+                    <span className="text-yellow-300">primeira turma</span>:
                   </p>
                   <p className="text-xs leading-relaxed text-white drop-shadow-sm lg:text-sm">
                     De{' '}
@@ -464,7 +485,10 @@ export function CaptureLandingSection() {
                       R$ 497
                     </span>{' '}
                     ou até{' '}
-                    <span className="font-bold text-yellow-300">12x de R$ 51,45</span>.
+                    <span className="font-bold text-yellow-300">
+                      12x de R$ 51,45
+                    </span>
+                    .
                   </p>
                   <p className="text-xs font-bold tracking-wide text-yellow-300 uppercase drop-shadow-md">
                     Essa condição nunca mais será repetida.
