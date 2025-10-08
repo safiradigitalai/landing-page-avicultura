@@ -64,7 +64,7 @@ export function CaptureLandingSection() {
             {/* Badge superior */}
             <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-yellow-400/20 px-3 py-1 backdrop-blur-sm">
               <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-yellow-400"></div>
-              <span className="text-[10px] font-bold uppercase tracking-wider text-yellow-300">
+              <span className="text-[10px] font-bold tracking-wider text-yellow-300 uppercase">
                 Vagas Limitadas
               </span>
             </div>
@@ -72,7 +72,7 @@ export function CaptureLandingSection() {
             {/* Título principal */}
             <div className="space-y-1.5">
               <h1
-                className="text-[11px] font-bold uppercase tracking-widest text-yellow-300/90"
+                className="text-[11px] font-bold tracking-widest text-yellow-300/90 uppercase"
                 style={{
                   textShadow: '0 2px 8px rgba(0,0,0,0.3)',
                 }}
@@ -80,7 +80,7 @@ export function CaptureLandingSection() {
                 Curso Online
               </h1>
               <h2
-                className="text-[22px] font-black leading-[1.05] text-white"
+                className="text-[22px] leading-[1.05] font-black text-white"
                 style={{
                   textShadow:
                     '0 3px 12px rgba(0,0,0,0.6), 0 6px 24px rgba(0,0,0,0.4)',
@@ -100,7 +100,7 @@ export function CaptureLandingSection() {
             <div className="h-0.5 w-12 rounded-full bg-gradient-to-r from-yellow-400 to-transparent"></div>
 
             {/* Subtítulo */}
-            <p className="text-[11px] font-semibold leading-tight text-white/90 drop-shadow-md">
+            <p className="text-[11px] leading-tight font-semibold text-white/90 drop-shadow-md">
               Do planejamento à{' '}
               <span className="text-yellow-300">lucratividade real</span> na
               avicultura caipira
@@ -159,12 +159,16 @@ export function CaptureLandingSection() {
             {/* Badge 1 */}
             <div className="flex items-center gap-3 rounded-lg border border-white/20 bg-white/10 p-3 backdrop-blur-sm">
               <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-yellow-400/20">
-                <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <svg
+                  className="h-5 w-5 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
                   <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
                 </svg>
               </div>
               <div className="flex-1">
-                <p className="text-xs font-bold leading-tight text-white">
+                <p className="text-xs leading-tight font-bold text-white">
                   + de 10 mil produtores atendidos
                 </p>
                 <p className="text-[10px] leading-tight text-white/70">
@@ -176,12 +180,20 @@ export function CaptureLandingSection() {
             {/* Badge 2 */}
             <div className="flex items-center gap-3 rounded-lg border border-white/20 bg-white/10 p-3 backdrop-blur-sm">
               <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-yellow-400/20">
-                <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                <svg
+                  className="h-5 w-5 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                    clipRule="evenodd"
+                  />
                 </svg>
               </div>
               <div className="flex-1">
-                <p className="text-xs font-bold leading-tight text-white">
+                <p className="text-xs leading-tight font-bold text-white">
                   + de 500 projetos implantados
                 </p>
                 <p className="text-[10px] leading-tight text-white/70">
@@ -193,12 +205,16 @@ export function CaptureLandingSection() {
             {/* Badge 3 */}
             <div className="flex items-center gap-3 rounded-lg border border-white/20 bg-white/10 p-3 backdrop-blur-sm">
               <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-yellow-400/20">
-                <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <svg
+                  className="h-5 w-5 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
                   <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
                 </svg>
               </div>
               <div className="flex-1">
-                <p className="text-xs font-bold leading-tight text-white">
+                <p className="text-xs leading-tight font-bold text-white">
                   Dupla formação e mestrado
                 </p>
                 <p className="text-[10px] leading-tight text-white/70">
@@ -213,10 +229,15 @@ export function CaptureLandingSection() {
         <div className="px-6 pb-6">
           <button
             onClick={() => {
-              const formElement = document.getElementById('form-inscricao-mobile')
-              formElement?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+              const formElement = document.getElementById(
+                'form-inscricao-mobile'
+              )
+              formElement?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+              })
             }}
-            className="w-full rounded-lg bg-yellow-400 px-5 py-4 text-sm font-black uppercase tracking-wider text-black drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500"
+            className="w-full rounded-lg bg-yellow-400 px-5 py-4 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500"
           >
             Garantir Minha Vaga Agora
           </button>
@@ -225,9 +246,10 @@ export function CaptureLandingSection() {
         {/* Seção "O que você vai aprender" - MOBILE */}
         <div className="px-6 pb-6">
           <h3
-            className="mb-3 text-base font-black uppercase tracking-tight text-white"
+            className="mb-3 text-base font-black tracking-tight text-white uppercase"
             style={{
-              textShadow: '0 2px 8px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.2)',
+              textShadow:
+                '0 2px 8px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.2)',
             }}
           >
             O que você vai aprender:
@@ -235,47 +257,92 @@ export function CaptureLandingSection() {
 
           <div className="space-y-2">
             <div className="flex items-start gap-2">
-              <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              <p className="text-xs font-normal leading-relaxed text-white/95 drop-shadow-md">
-                Como alcançar até 90% de produtividade, mantendo suas aves saudáveis e livres de doenças.
+              <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
+                Como alcançar até 90% de produtividade, mantendo suas aves
+                saudáveis e livres de doenças.
               </p>
             </div>
 
             <div className="flex items-start gap-2">
-              <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              <p className="text-xs font-normal leading-relaxed text-white/95 drop-shadow-md">
-                O método certo para transformar sua criação em um negócio lucrativo, com baixo investimento e pouca mão de obra.
+              <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
+                O método certo para transformar sua criação em um negócio
+                lucrativo, com baixo investimento e pouca mão de obra.
               </p>
             </div>
 
             <div className="flex items-start gap-2">
-              <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              <p className="text-xs font-normal leading-relaxed text-white/95 drop-shadow-md">
-                Estratégias práticas para reduzir perdas por mortalidade, doenças e canibalismo.
+              <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
+                Estratégias práticas para reduzir perdas por mortalidade,
+                doenças e canibalismo.
               </p>
             </div>
 
             <div className="flex items-start gap-2">
-              <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              <p className="text-xs font-normal leading-relaxed text-white/95 drop-shadow-md">
-                Como produzir suas próprias rações e economizar no custo da alimentação.
+              <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
+                Como produzir suas próprias rações e economizar no custo da
+                alimentação.
               </p>
             </div>
 
             <div className="flex items-start gap-2">
-              <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              <p className="text-xs font-normal leading-relaxed text-white/95 drop-shadow-md">
-                O passo a passo para estruturar uma criação eficiente e dentro das normas de bem-estar animal.
+              <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
+                O passo a passo para estruturar uma criação eficiente e dentro
+                das normas de bem-estar animal.
               </p>
             </div>
           </div>
@@ -289,66 +356,122 @@ export function CaptureLandingSection() {
         {/* Exclusivo Primeira Turma - MOBILE */}
         <div className="px-6 pb-6">
           <h3
-            className="mb-3 text-base font-black uppercase tracking-tight text-white"
+            className="mb-3 text-base font-black tracking-tight text-white uppercase"
             style={{
-              textShadow: '0 2px 8px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.2)',
+              textShadow:
+                '0 2px 8px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.2)',
             }}
           >
-            Exclusivo Para a <span className="text-yellow-300">Primeira Turma</span>
+            Exclusivo Para a{' '}
+            <span className="text-yellow-300">Primeira Turma</span>
           </h3>
 
           <div className="space-y-2">
             <div className="flex items-start gap-2">
-              <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              <p className="text-xs font-normal leading-relaxed text-white/95 drop-shadow-md">
-                Acesso vitalício às aulas gravadas (somente para quem entrar na <span className="font-bold text-yellow-300">1ª turma</span>).
+              <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
+                Acesso vitalício às aulas gravadas (somente para quem entrar na{' '}
+                <span className="font-bold text-yellow-300">1ª turma</span>).
               </p>
             </div>
 
             <div className="flex items-start gap-2">
-              <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              <p className="text-xs font-normal leading-relaxed text-white/95 drop-shadow-md">
-                Grupo de network vitalício no WhatsApp com o expert e outros produtores.
+              <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
+                Grupo de network vitalício no WhatsApp com o expert e outros
+                produtores.
               </p>
             </div>
 
             <div className="flex items-start gap-2">
-              <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              <p className="text-xs font-normal leading-relaxed text-white/95 drop-shadow-md">
+              <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
                 Encontros mensais exclusivos, sem custo adicional.
               </p>
             </div>
 
             <div className="flex items-start gap-2">
-              <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              <p className="text-xs font-normal leading-relaxed text-white/95 drop-shadow-md">
-                Sorteio de 10 consultorias individuais entre os primeiros inscritos.
+              <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
+                Sorteio de 10 consultorias individuais entre os primeiros
+                inscritos.
               </p>
             </div>
 
             <div className="flex items-start gap-2">
-              <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              <p className="text-xs font-normal leading-relaxed text-white/95 drop-shadow-md">
-                Planilha exclusiva de controle de produção e sanidade, elaborada pelo expert.
+              <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
+                Planilha exclusiva de controle de produção e sanidade, elaborada
+                pelo expert.
               </p>
             </div>
 
             <div className="flex items-start gap-2">
-              <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-yellow-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              <p className="text-xs font-normal leading-relaxed text-white/95 drop-shadow-md">
-                Valor promocional de <span className="font-bold text-yellow-300">R$ 497</span> (nas próximas turmas será R$ 997).
+              <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
+                Valor promocional de{' '}
+                <span className="font-bold text-yellow-300">R$ 497</span> (nas
+                próximas turmas será R$ 997).
               </p>
             </div>
           </div>
@@ -360,20 +483,25 @@ export function CaptureLandingSection() {
           <div className="mb-4">
             <div className="relative mb-3">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-yellow-500/20 to-transparent blur-sm"></div>
-              <h3 className="relative rounded-r-lg border-l-4 border-yellow-400 bg-gradient-to-r from-black/30 to-transparent py-2 pl-4 text-base font-black leading-tight tracking-tight text-white drop-shadow-lg backdrop-blur-sm">
-                Construa um negócio de galinhas caipiras que dá resultado e gera renda de verdade.
+              <h3 className="relative rounded-r-lg border-l-4 border-yellow-400 bg-gradient-to-r from-black/30 to-transparent py-2 pl-4 text-base leading-tight font-black tracking-tight text-white drop-shadow-lg backdrop-blur-sm">
+                Construa um negócio de galinhas caipiras que dá resultado e gera
+                renda de verdade.
               </h3>
             </div>
 
-            <p className="mb-3 text-sm font-medium leading-relaxed text-white/95 drop-shadow-md">
-              Descubra o passo a passo para transformar sua criação em um negócio lucrativo — do planejamento ao manejo — com baixo investimento, sanidade garantida e resultados consistentes.
+            <p className="mb-3 text-sm leading-relaxed font-medium text-white/95 drop-shadow-md">
+              Descubra o passo a passo para transformar sua criação em um
+              negócio lucrativo — do planejamento ao manejo — com baixo
+              investimento, sanidade garantida e resultados consistentes.
             </p>
           </div>
 
           <div className="space-y-3">
             <p className="text-xs font-semibold tracking-normal text-white drop-shadow-md">
               Faça sua pré-inscrição no formulário abaixo{' '}
-              <span className="font-bold text-yellow-300">(vagas limitadas)</span>
+              <span className="font-bold text-yellow-300">
+                (vagas limitadas)
+              </span>
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-3">
@@ -386,7 +514,7 @@ export function CaptureLandingSection() {
                     setFormData((prev) => ({ ...prev, name: e.target.value }))
                   }
                   required
-                  className="w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-sm font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-300/20"
+                  className="w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-sm font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:ring-2 focus:ring-yellow-300/20 focus:outline-none"
                 />
                 <input
                   type="text"
@@ -399,22 +527,25 @@ export function CaptureLandingSection() {
                     }))
                   }
                   required
-                  className="w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-sm font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-300/20"
+                  className="w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-sm font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:ring-2 focus:ring-yellow-300/20 focus:outline-none"
                 />
               </div>
 
               <Button
                 type="submit"
-                className="w-full rounded-lg bg-yellow-400 px-5 py-3.5 text-sm font-black uppercase tracking-wider text-black drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500"
+                className="w-full rounded-lg bg-yellow-400 px-5 py-3.5 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500"
                 loading={isSubmitting}
               >
-                {isSubmitting ? 'PROCESSANDO...' : 'Quero fazer minha pré inscrição agora'}
+                {isSubmitting
+                  ? 'PROCESSANDO...'
+                  : 'Quero fazer minha pré inscrição agora'}
               </Button>
             </form>
 
             <div className="rounded-lg border border-white/10 bg-white/5 p-3 backdrop-blur-sm">
               <p className="text-center text-xs leading-relaxed text-white/80 drop-shadow-sm">
-                Após preencher o formulário, nossa equipe entrará em contato pelo WhatsApp para confirmar sua inscrição.
+                Após preencher o formulário, nossa equipe entrará em contato
+                pelo WhatsApp para confirmar sua inscrição.
               </p>
             </div>
           </div>
@@ -424,15 +555,23 @@ export function CaptureLandingSection() {
             <div className="flex items-start gap-2.5">
               <div className="flex-shrink-0 text-xl text-yellow-300">⚠️</div>
               <div className="space-y-1.5">
-                <p className="text-sm font-black leading-tight text-white drop-shadow-md">
-                  Condição especial somente para a <span className="text-yellow-300">primeira turma</span>:
+                <p className="text-sm leading-tight font-black text-white drop-shadow-md">
+                  Condição especial somente para a{' '}
+                  <span className="text-yellow-300">primeira turma</span>:
                 </p>
                 <p className="text-xs leading-relaxed text-white drop-shadow-sm">
-                  De <span className="line-through text-white/60">R$ 997</span> por apenas{' '}
-                  <span className="text-lg font-black text-yellow-300">R$ 497</span> ou até{' '}
-                  <span className="font-bold text-yellow-300">12x de R$ 51,45</span>.
+                  De <span className="text-white/60 line-through">R$ 997</span>{' '}
+                  por apenas{' '}
+                  <span className="text-lg font-black text-yellow-300">
+                    R$ 497
+                  </span>{' '}
+                  ou até{' '}
+                  <span className="font-bold text-yellow-300">
+                    12x de R$ 51,45
+                  </span>
+                  .
                 </p>
-                <p className="text-xs font-bold uppercase tracking-wide text-yellow-300 drop-shadow-md">
+                <p className="text-xs font-bold tracking-wide text-yellow-300 uppercase drop-shadow-md">
                   Essa condição nunca mais será repetida.
                 </p>
               </div>
