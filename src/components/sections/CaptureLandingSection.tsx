@@ -241,8 +241,7 @@ export function CaptureLandingSection() {
                 />
               </svg>
               <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
-                Como alcançar até 90% de produtividade, mantendo suas aves
-                saudáveis e livres de doenças.
+                Como alcançar mais de 90% de produção de ovos com seu lote.
               </p>
             </div>
 
@@ -277,7 +276,7 @@ export function CaptureLandingSection() {
                 />
               </svg>
               <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
-                Estratégias práticas para reduzir perdas por mortalidade,
+                Práticas de manejos para reduzir perdas por mortalidade,
                 doenças e canibalismo.
               </p>
             </div>
@@ -295,8 +294,8 @@ export function CaptureLandingSection() {
                 />
               </svg>
               <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
-                Como produzir suas próprias rações e economizar no custo da
-                alimentação.
+                Como produzir suas próprias rações, reduzindo seu custo de
+                produção e melhorando a alimentação das aves.
               </p>
             </div>
 
@@ -313,8 +312,8 @@ export function CaptureLandingSection() {
                 />
               </svg>
               <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
-                O passo a passo para estruturar uma criação eficiente e dentro
-                das normas de bem-estar animal.
+                O passo a passo para estruturar uma criação eficiente dentro
+                das normas sanitárias e de bem-estar animal.
               </p>
             </div>
           </div>
@@ -463,8 +462,9 @@ export function CaptureLandingSection() {
 
             <p className="mb-3 text-sm leading-relaxed font-medium text-white/95 drop-shadow-md">
               Descubra o passo a passo para transformar sua criação em um
-              negócio lucrativo — do planejamento ao manejo — com baixo
-              investimento, sanidade garantida e resultados consistentes.
+              negócio lucrativo — do planejamento inicial ao manejo eficiente —
+              implantação de projetos com baixo investimento, metodologia
+              garantida e resultados consistentes.
             </p>
           </div>
 
@@ -628,8 +628,7 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Como alcançar até 90% de produtividade, mantendo suas aves
-                      saudáveis e livres de doenças.
+                      Como alcançar mais de 90% de produção de ovos com seu lote.
                     </p>
                   </div>
 
@@ -664,7 +663,7 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Estratégias práticas para reduzir perdas por mortalidade,
+                      Práticas de manejos para reduzir perdas por mortalidade,
                       doenças e canibalismo.
                     </p>
                   </div>
@@ -682,8 +681,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Como produzir suas próprias rações e economizar no custo
-                      da alimentação.
+                      Como produzir suas próprias rações, reduzindo seu custo de
+                      produção e melhorando a alimentação das aves.
                     </p>
                   </div>
 
@@ -700,8 +699,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      O passo a passo para estruturar uma criação eficiente e
-                      dentro das normas de bem-estar animal.
+                      O passo a passo para estruturar uma criação eficiente dentro
+                      das normas sanitárias e de bem-estar animal.
                     </p>
                   </div>
                 </div>
@@ -879,8 +878,9 @@ export function CaptureLandingSection() {
 
               <p className="text-sm leading-relaxed font-medium text-white/95 drop-shadow-md lg:text-base">
                 Descubra o passo a passo para transformar sua criação em um
-                negócio lucrativo — do planejamento ao manejo — com baixo
-                investimento, sanidade garantida e resultados consistentes.
+                negócio lucrativo — do planejamento inicial ao manejo eficiente —
+                implantação de projetos com baixo investimento, metodologia
+                garantida e resultados consistentes.
               </p>
             </div>
 
