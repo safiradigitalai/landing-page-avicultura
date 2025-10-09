@@ -276,8 +276,8 @@ export function CaptureLandingSection() {
                 />
               </svg>
               <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
-                Práticas de manejos para reduzir perdas por mortalidade,
-                doenças e canibalismo.
+                Práticas de manejos para reduzir perdas por mortalidade, doenças
+                e canibalismo.
               </p>
             </div>
 
@@ -312,8 +312,8 @@ export function CaptureLandingSection() {
                 />
               </svg>
               <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
-                O passo a passo para estruturar uma criação eficiente dentro
-                das normas sanitárias e de bem-estar animal.
+                O passo a passo para estruturar uma criação eficiente dentro das
+                normas sanitárias e de bem-estar animal.
               </p>
             </div>
           </div>
@@ -628,7 +628,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Como alcançar mais de 90% de produção de ovos com seu lote.
+                      Como alcançar mais de 90% de produção de ovos com seu
+                      lote.
                     </p>
                   </div>
 
@@ -699,8 +700,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      O passo a passo para estruturar uma criação eficiente dentro
-                      das normas sanitárias e de bem-estar animal.
+                      O passo a passo para estruturar uma criação eficiente
+                      dentro das normas sanitárias e de bem-estar animal.
                     </p>
                   </div>
                 </div>
@@ -878,8 +879,8 @@ export function CaptureLandingSection() {
 
               <p className="text-sm leading-relaxed font-medium text-white/95 drop-shadow-md lg:text-base">
                 Descubra o passo a passo para transformar sua criação em um
-                negócio lucrativo — do planejamento inicial ao manejo eficiente —
-                implantação de projetos com baixo investimento, metodologia
+                negócio lucrativo — do planejamento inicial ao manejo eficiente
+                — implantação de projetos com baixo investimento, metodologia
                 garantida e resultados consistentes.
               </p>
             </div>
