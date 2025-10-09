@@ -209,7 +209,7 @@ export function CaptureLandingSection() {
                 block: 'center',
               })
             }}
-            className="w-full rounded-lg bg-yellow-400 px-5 py-4 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500 animate-breathing-pulse"
+            className="animate-breathing-pulse w-full rounded-lg bg-yellow-400 px-5 py-4 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500"
           >
             Garantir Minha Vaga Agora
           </button>
@@ -507,7 +507,7 @@ export function CaptureLandingSection() {
 
               <Button
                 type="submit"
-                className="w-full rounded-lg bg-yellow-400 px-5 py-3.5 text-xs font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500 animate-breathing-pulse"
+                className="animate-breathing-pulse w-full rounded-lg bg-yellow-400 px-5 py-3.5 text-xs font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500"
                 loading={isSubmitting}
               >
                 {isSubmitting
@@ -895,7 +895,7 @@ export function CaptureLandingSection() {
 
                 <p className="relative text-center text-sm font-black tracking-wide text-white drop-shadow-lg lg:text-base">
                   Faça sua pré-inscrição no formulário abaixo{' '}
-                  <span className="block mt-1 text-yellow-300 lg:inline lg:mt-0">
+                  <span className="mt-1 block text-yellow-300 lg:mt-0 lg:inline">
                     (VAGAS LIMITADAS)
                   </span>
                 </p>
@@ -931,7 +931,7 @@ export function CaptureLandingSection() {
 
                 <Button
                   type="submit"
-                  className="w-full rounded-lg bg-yellow-400 px-5 py-3.5 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500 lg:text-base animate-breathing-pulse"
+                  className="animate-breathing-pulse w-full rounded-lg bg-yellow-400 px-5 py-3.5 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500 lg:text-base"
                   loading={isSubmitting}
                 >
                   {isSubmitting

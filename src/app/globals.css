@@ -106,7 +106,8 @@ html {
 
 /* Animação de pulse suave para botões de CTA */
 @keyframes breathing-pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
