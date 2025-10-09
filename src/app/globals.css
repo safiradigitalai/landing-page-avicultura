@@ -103,3 +103,17 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Animação de pulse suave para botões de CTA */
+@keyframes breathing-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.animate-breathing-pulse {
+  animation: breathing-pulse 2.5s ease-in-out infinite;
+}

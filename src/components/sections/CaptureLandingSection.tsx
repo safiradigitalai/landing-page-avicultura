@@ -57,44 +57,47 @@ export function CaptureLandingSection() {
 
       {/* LAYOUT MOBILE */}
       <div className="relative z-10 lg:hidden">
-        {/* Hero Mobile - Título + Foto lado a lado */}
-        <div className="flex items-center gap-3 px-6 pt-8 pb-0">
-          {/* Copy impactante à esquerda */}
-          <div className="flex flex-1 flex-col justify-center space-y-3">
-            {/* Badge superior */}
-            <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-yellow-400/20 px-3 py-1 backdrop-blur-sm">
-              <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-yellow-400"></div>
-              <span className="text-[10px] font-bold tracking-wider text-yellow-300 uppercase">
-                Vagas Limitadas
-              </span>
-            </div>
+        {/* Top Bar - Selos */}
+        <div className="px-6 pt-5 pb-2">
+          <div className="flex items-center justify-center gap-1">
+            <span className="inline-flex items-center rounded-md border border-white/40 bg-white/15 px-2 py-0.5 text-[9px] font-bold tracking-wide text-white uppercase drop-shadow-lg backdrop-blur-sm">
+              Online
+            </span>
+            <span className="inline-flex animate-pulse items-center rounded-md border border-yellow-300 bg-yellow-300/20 px-2 py-0.5 text-[9px] font-bold tracking-wide text-yellow-300 uppercase drop-shadow-lg backdrop-blur-sm">
+              Vagas Limitadas
+            </span>
+            <span className="inline-flex items-center rounded-md border border-white/40 bg-white/15 px-2 py-0.5 text-[9px] font-bold tracking-wide text-white uppercase drop-shadow-lg backdrop-blur-sm">
+              Acesso Vitalício (1ª turma)
+            </span>
+          </div>
+        </div>
 
-            {/* Título principal */}
-            <div className="space-y-1.5">
-              <h1
-                className="text-[11px] font-bold tracking-widest text-yellow-300/90 uppercase"
-                style={{
-                  textShadow: '0 2px 8px rgba(0,0,0,0.3)',
-                }}
-              >
-                Curso Online
-              </h1>
-              <h2
-                className="text-[22px] leading-[1.05] font-black text-white"
-                style={{
-                  textShadow:
-                    '0 3px 12px rgba(0,0,0,0.6), 0 6px 24px rgba(0,0,0,0.4)',
-                }}
-              >
-                Transforme
-                <br />
-                <span className="text-yellow-300">Galinhas</span>
-                <br />
-                em Renda
-                <br />
-                <span className="text-yellow-300">Real</span>
-              </h2>
-            </div>
+        {/* Hero Mobile - Título + Foto lado a lado */}
+        <div className="relative flex items-start gap-1 px-6 pb-0">
+          {/* Copy impactante à esquerda */}
+          <div className="flex flex-1 flex-col justify-start space-y-4">
+            {/* Curso Completo - alinhado com a cabeça */}
+            <h1
+              className="mt-[10px] text-[11px] font-bold tracking-widest text-yellow-300/90 uppercase"
+              style={{
+                textShadow: '0 2px 8px rgba(0,0,0,0.3)',
+              }}
+            >
+              Curso Completo
+            </h1>
+
+            {/* Título principal - maior e mais espaçado */}
+            <h2
+              className="text-[26px] leading-[1.15] font-black text-white"
+              style={{
+                textShadow:
+                  '0 3px 12px rgba(0,0,0,0.6), 0 6px 24px rgba(0,0,0,0.4)',
+              }}
+            >
+              Ganhando <span className="text-yellow-300">Dinheiro</span> com
+              <br />
+              <span className="text-yellow-300">Galinhas Caipiras</span>
+            </h2>
 
             {/* Linha divisória */}
             <div className="h-0.5 w-12 rounded-full bg-gradient-to-r from-yellow-400 to-transparent"></div>
@@ -105,56 +108,24 @@ export function CaptureLandingSection() {
               <span className="text-yellow-300">lucratividade real</span> na
               avicultura caipira
             </p>
-
-            {/* Mini stats */}
-            <div className="flex items-center gap-3 pt-1">
-              <div className="flex items-center gap-1.5">
-                <svg
-                  className="h-4 w-4 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <span className="text-[11px] font-bold text-white/90">
-                  10k+ alunos
-                </span>
-              </div>
-              <div className="h-3.5 w-px bg-white/30"></div>
-              <div className="flex items-center gap-1.5">
-                <svg
-                  className="h-4 w-4 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span className="text-[11px] font-bold text-white/90">
-                  Desde 2012
-                </span>
-              </div>
-            </div>
           </div>
 
-          {/* Foto à direita - Maior e posicionada para baixo */}
-          <div className="relative w-[60%] flex-shrink-0 self-end">
+          {/* Foto à direita - Maior e alinhada à esquerda */}
+          <div className="relative -ml-2 w-[70%] flex-shrink-0 self-end">
             <Image
               src="/herogalinha.png"
               alt="Expert em Avicultura"
-              width={400}
-              height={400}
+              width={580}
+              height={580}
               priority
-              className="h-auto w-full object-contain object-bottom drop-shadow-2xl"
+              className="h-auto w-full object-contain object-bottom object-left drop-shadow-2xl"
+              style={{ transform: 'scaleX(-1)' }}
             />
           </div>
         </div>
 
         {/* BADGES DE CREDENCIAIS - Blocos bonitos */}
-        <div className="px-6 pb-4">
+        <div className="-mt-1 px-6 pb-4">
           <div className="flex flex-col gap-2.5">
             {/* Badge 1 */}
             <div className="flex items-center gap-3 rounded-lg border border-white/20 bg-white/10 p-3 backdrop-blur-sm">
@@ -172,7 +143,7 @@ export function CaptureLandingSection() {
                   + de 10 mil produtores atendidos
                 </p>
                 <p className="text-[10px] leading-tight text-white/70">
-                  Desde 2012 no campo da avicultura caipira
+                  Desde 2012 no campo da avicultura caipira.
                 </p>
               </div>
             </div>
@@ -197,7 +168,7 @@ export function CaptureLandingSection() {
                   + de 500 projetos implantados
                 </p>
                 <p className="text-[10px] leading-tight text-white/70">
-                  Transformando granjas em negócios lucrativos
+                  Transformando granjas em negócios lucrativos.
                 </p>
               </div>
             </div>
@@ -218,7 +189,8 @@ export function CaptureLandingSection() {
                   Dupla formação e mestrado
                 </p>
                 <p className="text-[10px] leading-tight text-white/70">
-                  Zootecnista, Veterinário e Mestre
+                  Zootecnista(UFRN), Veterinário(UFPB) e Mestre em Produção
+                  Animal.
                 </p>
               </div>
             </div>
@@ -237,7 +209,7 @@ export function CaptureLandingSection() {
                 block: 'center',
               })
             }}
-            className="w-full rounded-lg bg-yellow-400 px-5 py-4 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500"
+            className="w-full rounded-lg bg-yellow-400 px-5 py-4 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500 animate-breathing-pulse"
           >
             Garantir Minha Vaga Agora
           </button>
@@ -497,12 +469,14 @@ export function CaptureLandingSection() {
           </div>
 
           <div className="space-y-3">
-            <p className="text-xs font-semibold tracking-normal text-white drop-shadow-md">
-              Faça sua pré-inscrição no formulário abaixo{' '}
-              <span className="font-bold text-yellow-300">
-                (vagas limitadas)
-              </span>
-            </p>
+            <div className="rounded-lg border border-yellow-300/30 bg-yellow-400/10 p-3 backdrop-blur-sm">
+              <p className="text-center text-base leading-relaxed font-black tracking-wide text-white drop-shadow-lg">
+                Faça sua pré-inscrição no formulário abaixo{' '}
+                <span className="mt-1 block text-yellow-300">
+                  (VAGAS LIMITADAS)
+                </span>
+              </p>
+            </div>
 
             <form onSubmit={handleSubmit} className="space-y-3">
               <div className="space-y-2.5">
@@ -533,7 +507,7 @@ export function CaptureLandingSection() {
 
               <Button
                 type="submit"
-                className="w-full rounded-lg bg-yellow-400 px-5 py-3.5 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500"
+                className="w-full rounded-lg bg-yellow-400 px-5 py-3.5 text-xs font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500 animate-breathing-pulse"
                 loading={isSubmitting}
               >
                 {isSubmitting
@@ -586,6 +560,19 @@ export function CaptureLandingSection() {
         <div className="relative px-6 lg:col-span-4 lg:overflow-hidden lg:pl-6">
           <div className="relative z-10 flex flex-col items-start justify-center py-8 lg:h-full lg:min-h-0 lg:px-4 xl:px-6">
             <div className="w-full max-w-lg space-y-4 lg:space-y-5">
+              {/* Selos/Badges - No topo */}
+              <div className="flex flex-wrap items-center gap-1.5">
+                <span className="inline-flex items-center rounded-md border border-white/40 bg-white/15 px-2.5 py-1 text-xs font-bold tracking-wide text-white uppercase drop-shadow-lg backdrop-blur-sm">
+                  Online
+                </span>
+                <span className="inline-flex animate-pulse items-center rounded-md border border-yellow-300 bg-yellow-300/20 px-2.5 py-1 text-xs font-bold tracking-wide text-yellow-300 uppercase drop-shadow-lg backdrop-blur-sm">
+                  Vagas Limitadas
+                </span>
+                <span className="inline-flex items-center rounded-md border border-white/40 bg-white/15 px-2.5 py-1 text-xs font-bold tracking-wide text-white uppercase drop-shadow-lg backdrop-blur-sm">
+                  Acesso Vitalício (1ª turma)
+                </span>
+              </div>
+
               {/* Header Principal - Alinhado à Esquerda */}
               <div className="space-y-3 text-left">
                 <div className="space-y-1.5">
@@ -609,44 +596,6 @@ export function CaptureLandingSection() {
                     com{' '}
                     <span className="text-yellow-300">Galinhas Caipiras</span>
                   </h2>
-                </div>
-
-                {/* Selos/Badges - Alinhados à Esquerda */}
-                <div className="flex flex-wrap items-center gap-1.5">
-                  <span className="inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-white/15 px-3 py-1 text-xs font-bold tracking-wide text-white uppercase drop-shadow-lg backdrop-blur-sm">
-                    <svg
-                      className="h-3 w-3"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
-                    </svg>
-                    Online
-                  </span>
-                  <span className="inline-flex animate-pulse items-center gap-1.5 rounded-md border border-yellow-300 bg-yellow-300/20 px-3 py-1 text-xs font-bold tracking-wide text-yellow-300 uppercase drop-shadow-lg backdrop-blur-sm">
-                    <svg
-                      className="h-3 w-3"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    Vagas Limitadas
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-white/15 px-3 py-1 text-xs font-bold tracking-wide text-white uppercase drop-shadow-lg backdrop-blur-sm">
-                    <svg
-                      className="h-3 w-3"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    Acesso Vitalício (1ª turma)
-                  </span>
                 </div>
               </div>
 
@@ -679,8 +628,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Garantir produção acima de 90% com aves saudáveis e livres
-                      de doenças.
+                      Como alcançar até 90% de produtividade, mantendo suas aves
+                      saudáveis e livres de doenças.
                     </p>
                   </div>
 
@@ -697,8 +646,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Implantar um negócio lucrativo na avicultura caipira com
-                      baixo investimento e pouca mão de obra.
+                      O método certo para transformar sua criação em um negócio
+                      lucrativo, com baixo investimento e pouca mão de obra.
                     </p>
                   </div>
 
@@ -715,7 +664,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Reduzir perdas por mortalidade, doenças e canibalismo.
+                      Estratégias práticas para reduzir perdas por mortalidade,
+                      doenças e canibalismo.
                     </p>
                   </div>
 
@@ -732,8 +682,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Produzir suas próprias rações e economizar no custo de
-                      produção.
+                      Como produzir suas próprias rações e economizar no custo
+                      da alimentação.
                     </p>
                   </div>
 
@@ -750,8 +700,8 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Estruturar uma criação eficiente e sustentável, dentro das
-                      normas de bem-estar animal.
+                      O passo a passo para estruturar uma criação eficiente e
+                      dentro das normas de bem-estar animal.
                     </p>
                   </div>
                 </div>
@@ -939,12 +889,17 @@ export function CaptureLandingSection() {
 
             {/* Call to Action */}
             <div className="space-y-3">
-              <p className="text-xs font-semibold tracking-normal text-white drop-shadow-md lg:text-sm">
-                Faça sua pré-inscrição no formulário abaixo{' '}
-                <span className="font-bold text-yellow-300">
-                  (vagas limitadas)
-                </span>
-              </p>
+              <div className="relative overflow-hidden rounded-lg border-2 border-yellow-300/60 bg-gradient-to-br from-yellow-400/20 to-yellow-500/10 p-3.5 shadow-lg backdrop-blur-sm">
+                {/* Brilho sutil no fundo */}
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-300/5 via-yellow-400/10 to-yellow-300/5 opacity-50"></div>
+
+                <p className="relative text-center text-sm font-black tracking-wide text-white drop-shadow-lg lg:text-base">
+                  Faça sua pré-inscrição no formulário abaixo{' '}
+                  <span className="block mt-1 text-yellow-300 lg:inline lg:mt-0">
+                    (VAGAS LIMITADAS)
+                  </span>
+                </p>
+              </div>
 
               {/* Formulário */}
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -976,7 +931,7 @@ export function CaptureLandingSection() {
 
                 <Button
                   type="submit"
-                  className="w-full rounded-lg bg-yellow-400 px-5 py-3.5 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500 lg:text-base"
+                  className="w-full rounded-lg bg-yellow-400 px-5 py-3.5 text-sm font-black tracking-wider text-black uppercase drop-shadow-lg transition-all hover:scale-[1.02] hover:bg-yellow-500 lg:text-base animate-breathing-pulse"
                   loading={isSubmitting}
                 >
                   {isSubmitting
