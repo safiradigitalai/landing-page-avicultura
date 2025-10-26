@@ -3,24 +3,58 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
+import { ModalAgradecimento } from '@/components/ui/ModalAgradecimento'
+import type { RespostaApiLead } from '@/lib/supabase'
 
 export function CaptureLandingSection() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    nome: '',
+    whatsapp: '',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [modalAberto, setModalAberto] = useState(false)
+  const [mensagemErro, setMensagemErro] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (!formData.name || !formData.email) return
+    if (!formData.nome || !formData.whatsapp) return
 
     setIsSubmitting(true)
+    setMensagemErro(null)
 
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          nome: formData.nome,
+          whatsapp: formData.whatsapp,
+        }),
+      })
+
+      const dados: RespostaApiLead = await response.json()
+
+      if (dados.sucesso) {
+        // Sucesso! Abrir modal de agradecimento
+        setModalAberto(true)
+        // Limpar formulário
+        setFormData({ nome: '', whatsapp: '' })
+      } else {
+        // Erro retornado pela API
+        setMensagemErro(dados.mensagem || 'Erro ao processar sua solicitação')
+      }
+    } catch (erro) {
+      console.error('Erro ao enviar formulário:', erro)
+      setMensagemErro('Erro de conexão. Verifique sua internet e tente novamente.')
+    } finally {
       setIsSubmitting(false)
-      window.location.href = '/success'
-    }, 2000)
+    }
+  }
+
+  const fecharModal = () => {
+    setModalAberto(false)
   }
 
   return (
@@ -483,9 +517,9 @@ export function CaptureLandingSection() {
                 <input
                   type="text"
                   placeholder="Digite seu nome"
-                  value={formData.name}
+                  value={formData.nome}
                   onChange={(e) =>
-                    setFormData((prev) => ({ ...prev, name: e.target.value }))
+                    setFormData((prev) => ({ ...prev, nome: e.target.value }))
                   }
                   required
                   className="w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-sm font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:ring-2 focus:ring-yellow-300/20 focus:outline-none"
@@ -493,17 +527,25 @@ export function CaptureLandingSection() {
                 <input
                   type="text"
                   placeholder="Digite seu número de WhatsApp"
-                  value={formData.email}
+                  value={formData.whatsapp}
                   onChange={(e) =>
                     setFormData((prev) => ({
                       ...prev,
-                      email: e.target.value,
+                      whatsapp: e.target.value,
                     }))
                   }
                   required
                   className="w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-sm font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:ring-2 focus:ring-yellow-300/20 focus:outline-none"
                 />
               </div>
+
+              {mensagemErro && (
+                <div className="rounded-lg border border-red-300/50 bg-red-500/20 p-3 backdrop-blur-sm">
+                  <p className="text-center text-xs leading-relaxed text-red-100 drop-shadow-sm">
+                    {mensagemErro}
+                  </p>
+                </div>
+              )}
 
               <Button
                 type="submit"
@@ -908,9 +950,9 @@ export function CaptureLandingSection() {
                   <input
                     type="text"
                     placeholder="Digite seu nome"
-                    value={formData.name}
+                    value={formData.nome}
                     onChange={(e) =>
-                      setFormData((prev) => ({ ...prev, name: e.target.value }))
+                      setFormData((prev) => ({ ...prev, nome: e.target.value }))
                     }
                     required
                     className="w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-sm font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:ring-2 focus:ring-yellow-300/20 focus:outline-none"
@@ -918,17 +960,25 @@ export function CaptureLandingSection() {
                   <input
                     type="text"
                     placeholder="Digite seu número de WhatsApp"
-                    value={formData.email}
+                    value={formData.whatsapp}
                     onChange={(e) =>
                       setFormData((prev) => ({
                         ...prev,
-                        email: e.target.value,
+                        whatsapp: e.target.value,
                       }))
                     }
                     required
                     className="w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-sm font-medium text-white placeholder-white/60 drop-shadow-sm backdrop-blur-sm transition-all focus:border-yellow-300 focus:ring-2 focus:ring-yellow-300/20 focus:outline-none"
                   />
                 </div>
+
+                {mensagemErro && (
+                  <div className="rounded-lg border border-red-300/50 bg-red-500/20 p-3 backdrop-blur-sm">
+                    <p className="text-center text-sm leading-relaxed text-red-100 drop-shadow-sm">
+                      {mensagemErro}
+                    </p>
+                  </div>
+                )}
 
                 <Button
                   type="submit"
@@ -981,6 +1031,9 @@ export function CaptureLandingSection() {
           </div>
         </div>
       </div>
+
+      {/* Modal de Agradecimento */}
+      <ModalAgradecimento aberto={modalAberto} aoFechar={fecharModal} nome={formData.nome} />
     </div>
   )
 }
