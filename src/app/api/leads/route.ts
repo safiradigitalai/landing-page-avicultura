@@ -35,9 +35,14 @@ function validarNome(nome: string): boolean {
  */
 export async function POST(request: NextRequest) {
   try {
+    // Log inicial para debug
+    console.log('[API /api/leads] Requisição recebida')
+
     // Parse do body
     const body = await request.json()
     const { nome, whatsapp } = body
+
+    console.log('[API /api/leads] Dados recebidos:', { nome, whatsapp })
 
     // Validações de entrada
     if (!nome || !whatsapp) {
@@ -77,9 +82,12 @@ export async function POST(request: NextRequest) {
 
     // Normalizar WhatsApp
     const whatsappNormalizado = normalizarWhatsApp(whatsapp)
+    console.log('[API /api/leads] WhatsApp normalizado:', whatsappNormalizado)
 
     // Criar cliente admin do Supabase
+    console.log('[API /api/leads] Criando cliente Supabase Admin...')
     const supabase = supabaseAdmin()
+    console.log('[API /api/leads] Cliente Supabase criado com sucesso')
 
     // Verificar se já existe um lead com este WhatsApp (validação de duplicata)
     const { data: leadExistente, error: erroConsulta } = await supabase
@@ -150,13 +158,19 @@ export async function POST(request: NextRequest) {
       { status: 201 } // 201 Created
     )
   } catch (erro) {
-    console.error('Erro na API de leads:', erro)
+    // Log detalhado do erro
+    console.error('[API /api/leads] Erro capturado:', {
+      tipo: typeof erro,
+      mensagem: erro instanceof Error ? erro.message : String(erro),
+      stack: erro instanceof Error ? erro.stack : undefined,
+      erro,
+    })
 
     return NextResponse.json<RespostaApiLead>(
       {
         sucesso: false,
         mensagem: 'Erro inesperado ao processar sua solicitação',
-        erro: 'ERRO_INESPERADO',
+        erro: erro instanceof Error ? erro.message : 'ERRO_INESPERADO',
       },
       { status: 500 }
     )

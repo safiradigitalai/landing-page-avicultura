@@ -1,33 +1,57 @@
 import { createClient } from '@supabase/supabase-js'
 
-// Validar variáveis de ambiente
+// Obter variáveis de ambiente (sem validação no nível do módulo)
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
 
-if (!supabaseUrl) {
-  throw new Error(
-    'NEXT_PUBLIC_SUPABASE_URL não está definida nas variáveis de ambiente'
-  )
-}
-
-if (!supabaseAnonKey) {
-  throw new Error(
-    'NEXT_PUBLIC_SUPABASE_ANON_KEY não está definida nas variáveis de ambiente'
-  )
-}
-
 /**
- * Cliente Supabase para uso no lado do cliente (browser)
+ * Obtém cliente Supabase para uso no lado do cliente (browser)
  * Utiliza a chave anônima (ANON_KEY) que é segura para exposição pública
  *
  * Use este cliente em componentes React e Client Components
  */
-export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
-  auth: {
-    persistSession: false, // Não precisamos de sessão para captura de leads
-  },
-})
+export const getSupabaseClient = () => {
+  if (!supabaseUrl) {
+    throw new Error(
+      'NEXT_PUBLIC_SUPABASE_URL não está definida nas variáveis de ambiente'
+    )
+  }
+
+  if (!supabaseAnonKey) {
+    throw new Error(
+      'NEXT_PUBLIC_SUPABASE_ANON_KEY não está definida nas variáveis de ambiente'
+    )
+  }
+
+  return createClient(supabaseUrl, supabaseAnonKey, {
+    auth: {
+      persistSession: false, // Não precisamos de sessão para captura de leads
+    },
+  })
+}
+
+/**
+ * Cliente Supabase singleton para uso no cliente
+ * Criado apenas uma vez, na primeira chamada
+ */
+let clientInstance: ReturnType<typeof createClient> | null = null
+
+export const supabase = () => {
+  if (!clientInstance && supabaseUrl && supabaseAnonKey) {
+    clientInstance = createClient(supabaseUrl, supabaseAnonKey, {
+      auth: {
+        persistSession: false,
+      },
+    })
+  }
+
+  if (!clientInstance) {
+    throw new Error('Não foi possível criar cliente Supabase')
+  }
+
+  return clientInstance
+}
 
 /**
  * Cliente Supabase para uso no lado do servidor (API Routes, Server Components)
@@ -37,13 +61,19 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
  * Use apenas em API routes e Server Components
  */
 export const supabaseAdmin = () => {
+  if (!supabaseUrl) {
+    throw new Error(
+      'NEXT_PUBLIC_SUPABASE_URL não está definida nas variáveis de ambiente'
+    )
+  }
+
   if (!supabaseServiceRoleKey) {
     throw new Error(
       'SUPABASE_SERVICE_ROLE_KEY não está definida nas variáveis de ambiente'
     )
   }
 
-  return createClient(supabaseUrl!, supabaseServiceRoleKey, {
+  return createClient(supabaseUrl, supabaseServiceRoleKey, {
     auth: {
       persistSession: false,
       autoRefreshToken: false,
