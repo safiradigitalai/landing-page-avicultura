@@ -47,7 +47,9 @@ export function CaptureLandingSection() {
       }
     } catch (erro) {
       console.error('Erro ao enviar formulário:', erro)
-      setMensagemErro('Erro de conexão. Verifique sua internet e tente novamente.')
+      setMensagemErro(
+        'Erro de conexão. Verifique sua internet e tente novamente.'
+      )
     } finally {
       setIsSubmitting(false)
     }
@@ -1033,7 +1035,11 @@ export function CaptureLandingSection() {
       </div>
 
       {/* Modal de Agradecimento */}
-      <ModalAgradecimento aberto={modalAberto} aoFechar={fecharModal} nome={formData.nome} />
+      <ModalAgradecimento
+        aberto={modalAberto}
+        aoFechar={fecharModal}
+        nome={formData.nome}
+      />
     </div>
   )
 }

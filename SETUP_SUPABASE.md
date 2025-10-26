@@ -81,6 +81,7 @@ O servidor irá iniciar em `http://localhost:3000`
 ### Teste 3: Verificar Modal de Sucesso
 
 Se tudo deu certo, você verá:
+
 - ✅ Modal de agradecimento com animação suave
 - ✅ Mensagem personalizada com o primeiro nome do usuário
 - ✅ Informações sobre próximos passos
@@ -107,11 +108,13 @@ Se tudo deu certo, você verá:
 ### Teste 6: Testar Validações de Campo
 
 **Teste WhatsApp Inválido:**
+
 - Nome: Maria
 - WhatsApp: 123
 - Mensagem esperada: "WhatsApp inválido. Digite um número válido com DDD"
 
 **Teste Nome Curto:**
+
 - Nome: A
 - WhatsApp: 11988888888
 - Mensagem esperada: "Nome deve ter no mínimo 2 caracteres"
@@ -141,6 +144,7 @@ curl http://localhost:3000/api/leads
 ```
 
 Retorno esperado:
+
 ```json
 {
   "sucesso": true,
@@ -164,6 +168,7 @@ Retorno esperado:
 ### POST /api/leads
 
 **Request:**
+
 ```json
 {
   "nome": "João Silva",
@@ -172,6 +177,7 @@ Retorno esperado:
 ```
 
 **Response (Sucesso):**
+
 ```json
 {
   "sucesso": true,
@@ -187,6 +193,7 @@ Retorno esperado:
 ```
 
 **Response (WhatsApp Duplicado):**
+
 ```json
 {
   "sucesso": false,
@@ -196,6 +203,7 @@ Retorno esperado:
 ```
 
 **Response (Validação):**
+
 ```json
 {
   "sucesso": false,
@@ -209,6 +217,7 @@ Retorno esperado:
 ## 🎨 Design do Modal
 
 O modal de agradecimento foi criado seguindo os padrões da landing page:
+
 - ✅ Glass morphism (backdrop blur)
 - ✅ Animações suaves com Framer Motion
 - ✅ Ícone de sucesso animado
@@ -221,11 +230,13 @@ O modal de agradecimento foi criado seguindo os padrões da landing page:
 ## 🛡️ Segurança Implementada
 
 ### Validações no Frontend
+
 - ✅ Campos obrigatórios
 - ✅ Nome mínimo de 2 caracteres
 - ✅ WhatsApp com formato válido
 
 ### Validações no Backend
+
 - ✅ Validação de campos obrigatórios
 - ✅ Validação de formato de WhatsApp (10-13 dígitos)
 - ✅ Normalização de WhatsApp (apenas números)
@@ -233,6 +244,7 @@ O modal de agradecimento foi criado seguindo os padrões da landing page:
 - ✅ Tratamento de erros do Supabase
 
 ### Row Level Security (RLS)
+
 - ✅ INSERT público para captura de leads
 - ✅ SELECT/UPDATE/DELETE apenas para autenticados
 - ✅ Índice único em WhatsApp para garantir unicidade
@@ -242,6 +254,7 @@ O modal de agradecimento foi criado seguindo os padrões da landing page:
 ## 📝 Formatos de WhatsApp Aceitos
 
 A API normaliza e aceita os seguintes formatos:
+
 - `11999999999` ✅
 - `(11) 99999-9999` ✅
 - `+5511999999999` ✅
@@ -254,19 +267,23 @@ Todos são convertidos para apenas números: `11999999999`
 ## 🚨 Troubleshooting
 
 ### Erro: "NEXT_PUBLIC_SUPABASE_URL não está definida"
+
 - ✅ Verifique se o arquivo `.env.local` existe na raiz do projeto
 - ✅ Reinicie o servidor (`npm run dev`)
 
 ### Erro: "relation 'leads' does not exist"
+
 - ✅ Execute o SQL no Supabase Dashboard
 - ✅ Verifique se a tabela `leads` foi criada
 
 ### Modal não abre após submissão
+
 - ✅ Abra o console do navegador (F12)
 - ✅ Verifique se há erros de API
 - ✅ Verifique se a resposta da API tem `sucesso: true`
 
 ### Erro: "Failed to fetch"
+
 - ✅ Verifique se o servidor está rodando
 - ✅ Verifique a conexão com internet
 - ✅ Verifique se as credenciais do Supabase estão corretas
@@ -276,15 +293,19 @@ Todos são convertidos para apenas números: `11999999999`
 ## ✨ Funcionalidades Extras Implementadas
 
 ### 1. **View de Estatísticas**
+
 Consulte estatísticas agregadas:
+
 ```sql
 SELECT * FROM leads_stats;
 ```
 
 ### 2. **Trigger de Updated At**
+
 Atualiza automaticamente o campo `updated_at` sempre que um registro é modificado.
 
 ### 3. **Índices de Performance**
+
 - Índice único em `whatsapp`
 - Índice em `created_at` (DESC)
 - Índice em `nome` (case-insensitive)
@@ -316,6 +337,7 @@ Se quiser evoluir ainda mais:
 ## 📞 Suporte
 
 Se encontrar algum problema:
+
 1. Verifique o console do navegador (F12)
 2. Verifique os logs do terminal onde o servidor está rodando
 3. Consulte a documentação do [Supabase](https://supabase.com/docs)
@@ -325,6 +347,7 @@ Se encontrar algum problema:
 ## ✅ Checklist Final
 
 Antes de colocar em produção:
+
 - [ ] SQL executado no Supabase
 - [ ] Tabela `leads` criada
 - [ ] Políticas RLS ativas
