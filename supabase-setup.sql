@@ -55,29 +55,31 @@ CREATE TRIGGER update_leads_updated_at
 -- Habilitar Row Level Security
 ALTER TABLE leads ENABLE ROW LEVEL SECURITY;
 
--- Política: Permitir INSERT anônimo (captura de leads via formulário público)
-CREATE POLICY "Permitir insert anônimo de leads"
+-- Política: Permitir INSERT para todos (público)
+-- A validação é feita na API, então podemos permitir INSERT público
+CREATE POLICY "Permitir insert público de leads"
 ON leads
 FOR INSERT
-TO anon
+TO public
 WITH CHECK (true);
 
--- Política: Permitir SELECT apenas para usuários autenticados (admin)
-CREATE POLICY "Permitir select de leads para usuários autenticados"
+-- Política: Permitir SELECT para todos
+-- Isso permite que a API (service_role) possa verificar duplicatas
+CREATE POLICY "Permitir select público de leads"
 ON leads
 FOR SELECT
-TO authenticated
+TO public
 USING (true);
 
--- Política: Permitir UPDATE apenas para usuários autenticados
-CREATE POLICY "Permitir update de leads para usuários autenticados"
+-- Política: Permitir UPDATE apenas para usuários autenticados (admin)
+CREATE POLICY "Permitir update de leads para autenticados"
 ON leads
 FOR UPDATE
 TO authenticated
 USING (true);
 
--- Política: Permitir DELETE apenas para usuários autenticados
-CREATE POLICY "Permitir delete de leads para usuários autenticados"
+-- Política: Permitir DELETE apenas para usuários autenticados (admin)
+CREATE POLICY "Permitir delete de leads para autenticados"
 ON leads
 FOR DELETE
 TO authenticated
