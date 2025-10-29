@@ -477,8 +477,13 @@ export function CaptureLandingSection() {
               </svg>
               <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
                 Valores promocionais em lotes:{' '}
-                <span className="font-bold text-emerald-300">1º lote R$ 497</span> e{' '}
-                <span className="font-bold text-yellow-300">2º lote R$ 647</span>{' '}
+                <span className="font-bold text-emerald-300">
+                  1º lote R$ 497
+                </span>{' '}
+                e{' '}
+                <span className="font-bold text-yellow-300">
+                  2º lote R$ 647
+                </span>{' '}
                 (nas próximas turmas será R$ 997).
               </p>
             </div>
@@ -580,17 +585,23 @@ export function CaptureLandingSection() {
 
                 <div className="space-y-1">
                   <p className="text-xs leading-tight text-white drop-shadow-sm">
-                    📅 <span className="font-semibold">Início das aulas:</span> Dezembro de 2025
+                    📅 <span className="font-semibold">Início das aulas:</span>{' '}
+                    Dezembro de 2025
                   </p>
                 </div>
 
                 <div className="space-y-1.5 pt-1">
-                  <div className="rounded-md bg-emerald-500/10 border border-emerald-400/30 p-2">
-                    <p className="text-xs leading-tight font-bold text-emerald-300 mb-1">
-                      🟢 1º Lote <span className="text-white/70 text-[10px]">(válido até o fechamento das vagas iniciais)</span>:
+                  <div className="rounded-md border border-emerald-400/30 bg-emerald-500/10 p-2">
+                    <p className="mb-1 text-xs leading-tight font-bold text-emerald-300">
+                      🟢 1º Lote{' '}
+                      <span className="text-[10px] text-white/70">
+                        (válido até o fechamento das vagas iniciais)
+                      </span>
+                      :
                     </p>
                     <p className="text-xs leading-relaxed text-white">
-                      De <span className="text-white/60 line-through">R$ 997</span>{' '}
+                      De{' '}
+                      <span className="text-white/60 line-through">R$ 997</span>{' '}
                       por{' '}
                       <span className="text-base font-black text-emerald-300">
                         R$ 497
@@ -602,12 +613,17 @@ export function CaptureLandingSection() {
                     </p>
                   </div>
 
-                  <div className="rounded-md bg-yellow-400/10 border border-yellow-400/30 p-2">
-                    <p className="text-xs leading-tight font-bold text-yellow-300 mb-1">
-                      🟡 2º Lote <span className="text-white/70 text-[10px]">(após o 1º encerramento)</span>:
+                  <div className="rounded-md border border-yellow-400/30 bg-yellow-400/10 p-2">
+                    <p className="mb-1 text-xs leading-tight font-bold text-yellow-300">
+                      🟡 2º Lote{' '}
+                      <span className="text-[10px] text-white/70">
+                        (após o 1º encerramento)
+                      </span>
+                      :
                     </p>
                     <p className="text-xs leading-relaxed text-white">
-                      De <span className="text-white/60 line-through">R$ 997</span>{' '}
+                      De{' '}
+                      <span className="text-white/60 line-through">R$ 997</span>{' '}
                       por{' '}
                       <span className="text-base font-black text-yellow-300">
                         R$ 647
@@ -620,7 +636,7 @@ export function CaptureLandingSection() {
                   </div>
                 </div>
 
-                <p className="text-xs font-bold tracking-wide text-yellow-300 drop-shadow-md pt-1">
+                <p className="pt-1 text-xs font-bold tracking-wide text-yellow-300 drop-shadow-md">
                   💬 Essa condição nunca mais será repetida.
                 </p>
               </div>
@@ -906,8 +922,13 @@ export function CaptureLandingSection() {
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
                       Valores promocionais em lotes:{' '}
-                      <span className="font-bold text-emerald-300">1º lote R$ 497</span> e{' '}
-                      <span className="font-bold text-yellow-300">2º lote R$ 647</span>{' '}
+                      <span className="font-bold text-emerald-300">
+                        1º lote R$ 497
+                      </span>{' '}
+                      e{' '}
+                      <span className="font-bold text-yellow-300">
+                        2º lote R$ 647
+                      </span>{' '}
                       (nas próximas turmas será R$ 997).
                     </p>
                   </div>
@@ -1045,17 +1066,26 @@ export function CaptureLandingSection() {
 
                   <div className="space-y-1">
                     <p className="text-xs leading-tight text-white drop-shadow-sm lg:text-sm">
-                      📅 <span className="font-semibold">Início das aulas:</span> Dezembro de 2025
+                      📅{' '}
+                      <span className="font-semibold">Início das aulas:</span>{' '}
+                      Dezembro de 2025
                     </p>
                   </div>
 
                   <div className="space-y-1.5 pt-1">
-                    <div className="rounded-md bg-emerald-500/10 border border-emerald-400/30 p-2">
-                      <p className="text-xs leading-tight font-bold text-emerald-300 mb-1 lg:text-sm">
-                        🟢 1º Lote <span className="text-white/70 text-[10px] lg:text-xs">(válido até o fechamento das vagas iniciais)</span>:
+                    <div className="rounded-md border border-emerald-400/30 bg-emerald-500/10 p-2">
+                      <p className="mb-1 text-xs leading-tight font-bold text-emerald-300 lg:text-sm">
+                        🟢 1º Lote{' '}
+                        <span className="text-[10px] text-white/70 lg:text-xs">
+                          (válido até o fechamento das vagas iniciais)
+                        </span>
+                        :
                       </p>
                       <p className="text-xs leading-relaxed text-white lg:text-sm">
-                        De <span className="text-white/60 line-through">R$ 997</span>{' '}
+                        De{' '}
+                        <span className="text-white/60 line-through">
+                          R$ 997
+                        </span>{' '}
                         por{' '}
                         <span className="text-base font-black text-emerald-300 lg:text-lg">
                           R$ 497
@@ -1067,12 +1097,19 @@ export function CaptureLandingSection() {
                       </p>
                     </div>
 
-                    <div className="rounded-md bg-yellow-400/10 border border-yellow-400/30 p-2">
-                      <p className="text-xs leading-tight font-bold text-yellow-300 mb-1 lg:text-sm">
-                        🟡 2º Lote <span className="text-white/70 text-[10px] lg:text-xs">(após o 1º encerramento)</span>:
+                    <div className="rounded-md border border-yellow-400/30 bg-yellow-400/10 p-2">
+                      <p className="mb-1 text-xs leading-tight font-bold text-yellow-300 lg:text-sm">
+                        🟡 2º Lote{' '}
+                        <span className="text-[10px] text-white/70 lg:text-xs">
+                          (após o 1º encerramento)
+                        </span>
+                        :
                       </p>
                       <p className="text-xs leading-relaxed text-white lg:text-sm">
-                        De <span className="text-white/60 line-through">R$ 997</span>{' '}
+                        De{' '}
+                        <span className="text-white/60 line-through">
+                          R$ 997
+                        </span>{' '}
                         por{' '}
                         <span className="text-base font-black text-yellow-300 lg:text-lg">
                           R$ 647
@@ -1085,7 +1122,7 @@ export function CaptureLandingSection() {
                     </div>
                   </div>
 
-                  <p className="text-xs font-bold tracking-wide text-yellow-300 drop-shadow-md pt-1 lg:text-sm">
+                  <p className="pt-1 text-xs font-bold tracking-wide text-yellow-300 drop-shadow-md lg:text-sm">
                     💬 Essa condição nunca mais será repetida.
                   </p>
                 </div>
