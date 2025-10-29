@@ -476,9 +476,10 @@ export function CaptureLandingSection() {
                 />
               </svg>
               <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md">
-                Valor promocional de{' '}
-                <span className="font-bold text-yellow-300">R$ 497</span> (nas
-                próximas turmas será R$ 997).
+                Valores promocionais em lotes:{' '}
+                <span className="font-bold text-emerald-300">1º lote R$ 497</span> e{' '}
+                <span className="font-bold text-yellow-300">2º lote R$ 647</span>{' '}
+                (nas próximas turmas será R$ 997).
               </p>
             </div>
           </div>
@@ -572,25 +573,55 @@ export function CaptureLandingSection() {
           <div className="mt-4 space-y-2 rounded-lg border-2 border-yellow-300/50 bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 p-3.5 backdrop-blur-sm">
             <div className="flex items-start gap-2.5">
               <div className="flex-shrink-0 text-xl text-yellow-300">⚠️</div>
-              <div className="space-y-1.5">
+              <div className="space-y-2">
                 <p className="text-sm leading-tight font-black text-white drop-shadow-md">
-                  Condição especial somente para a{' '}
-                  <span className="text-yellow-300">primeira turma</span>:
+                  Condição especial de pré-inscrição:
                 </p>
-                <p className="text-xs leading-relaxed text-white drop-shadow-sm">
-                  De <span className="text-white/60 line-through">R$ 997</span>{' '}
-                  por apenas{' '}
-                  <span className="text-lg font-black text-yellow-300">
-                    R$ 497
-                  </span>{' '}
-                  ou até{' '}
-                  <span className="font-bold text-yellow-300">
-                    12x de R$ 51,45
-                  </span>
-                  .
-                </p>
-                <p className="text-xs font-bold tracking-wide text-yellow-300 uppercase drop-shadow-md">
-                  Essa condição nunca mais será repetida.
+
+                <div className="space-y-1">
+                  <p className="text-xs leading-tight text-white drop-shadow-sm">
+                    📅 <span className="font-semibold">Início das aulas:</span> Dezembro de 2025
+                  </p>
+                </div>
+
+                <div className="space-y-1.5 pt-1">
+                  <div className="rounded-md bg-emerald-500/10 border border-emerald-400/30 p-2">
+                    <p className="text-xs leading-tight font-bold text-emerald-300 mb-1">
+                      🟢 1º Lote <span className="text-white/70 text-[10px]">(válido até o fechamento das vagas iniciais)</span>:
+                    </p>
+                    <p className="text-xs leading-relaxed text-white">
+                      De <span className="text-white/60 line-through">R$ 997</span>{' '}
+                      por{' '}
+                      <span className="text-base font-black text-emerald-300">
+                        R$ 497
+                      </span>{' '}
+                      ou até{' '}
+                      <span className="font-bold text-emerald-300">
+                        12x de R$ 51,45
+                      </span>
+                    </p>
+                  </div>
+
+                  <div className="rounded-md bg-yellow-400/10 border border-yellow-400/30 p-2">
+                    <p className="text-xs leading-tight font-bold text-yellow-300 mb-1">
+                      🟡 2º Lote <span className="text-white/70 text-[10px]">(após o 1º encerramento)</span>:
+                    </p>
+                    <p className="text-xs leading-relaxed text-white">
+                      De <span className="text-white/60 line-through">R$ 997</span>{' '}
+                      por{' '}
+                      <span className="text-base font-black text-yellow-300">
+                        R$ 647
+                      </span>{' '}
+                      ou até{' '}
+                      <span className="font-bold text-yellow-300">
+                        12x de R$ 61,18
+                      </span>
+                    </p>
+                  </div>
+                </div>
+
+                <p className="text-xs font-bold tracking-wide text-yellow-300 drop-shadow-md pt-1">
+                  💬 Essa condição nunca mais será repetida.
                 </p>
               </div>
             </div>
@@ -874,8 +905,9 @@ export function CaptureLandingSection() {
                       />
                     </svg>
                     <p className="text-xs leading-relaxed font-normal text-white/95 drop-shadow-md lg:text-sm">
-                      Valor promocional de{' '}
-                      <span className="font-bold text-yellow-300">R$ 497</span>{' '}
+                      Valores promocionais em lotes:{' '}
+                      <span className="font-bold text-emerald-300">1º lote R$ 497</span> e{' '}
+                      <span className="font-bold text-yellow-300">2º lote R$ 647</span>{' '}
                       (nas próximas turmas será R$ 997).
                     </p>
                   </div>
@@ -1006,26 +1038,55 @@ export function CaptureLandingSection() {
             <div className="space-y-2 rounded-lg border-2 border-yellow-300/50 bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 p-3.5 backdrop-blur-sm">
               <div className="flex items-start gap-2.5">
                 <div className="flex-shrink-0 text-xl text-yellow-300">⚠️</div>
-                <div className="space-y-1.5">
+                <div className="space-y-2">
                   <p className="text-sm leading-tight font-black text-white drop-shadow-md lg:text-base">
-                    Condição especial somente para a{' '}
-                    <span className="text-yellow-300">primeira turma</span>:
+                    Condição especial de pré-inscrição:
                   </p>
-                  <p className="text-xs leading-relaxed text-white drop-shadow-sm lg:text-sm">
-                    De{' '}
-                    <span className="text-white/60 line-through">R$ 997</span>{' '}
-                    por apenas{' '}
-                    <span className="text-lg font-black text-yellow-300">
-                      R$ 497
-                    </span>{' '}
-                    ou até{' '}
-                    <span className="font-bold text-yellow-300">
-                      12x de R$ 51,45
-                    </span>
-                    .
-                  </p>
-                  <p className="text-xs font-bold tracking-wide text-yellow-300 uppercase drop-shadow-md">
-                    Essa condição nunca mais será repetida.
+
+                  <div className="space-y-1">
+                    <p className="text-xs leading-tight text-white drop-shadow-sm lg:text-sm">
+                      📅 <span className="font-semibold">Início das aulas:</span> Dezembro de 2025
+                    </p>
+                  </div>
+
+                  <div className="space-y-1.5 pt-1">
+                    <div className="rounded-md bg-emerald-500/10 border border-emerald-400/30 p-2">
+                      <p className="text-xs leading-tight font-bold text-emerald-300 mb-1 lg:text-sm">
+                        🟢 1º Lote <span className="text-white/70 text-[10px] lg:text-xs">(válido até o fechamento das vagas iniciais)</span>:
+                      </p>
+                      <p className="text-xs leading-relaxed text-white lg:text-sm">
+                        De <span className="text-white/60 line-through">R$ 997</span>{' '}
+                        por{' '}
+                        <span className="text-base font-black text-emerald-300 lg:text-lg">
+                          R$ 497
+                        </span>{' '}
+                        ou até{' '}
+                        <span className="font-bold text-emerald-300">
+                          12x de R$ 51,45
+                        </span>
+                      </p>
+                    </div>
+
+                    <div className="rounded-md bg-yellow-400/10 border border-yellow-400/30 p-2">
+                      <p className="text-xs leading-tight font-bold text-yellow-300 mb-1 lg:text-sm">
+                        🟡 2º Lote <span className="text-white/70 text-[10px] lg:text-xs">(após o 1º encerramento)</span>:
+                      </p>
+                      <p className="text-xs leading-relaxed text-white lg:text-sm">
+                        De <span className="text-white/60 line-through">R$ 997</span>{' '}
+                        por{' '}
+                        <span className="text-base font-black text-yellow-300 lg:text-lg">
+                          R$ 647
+                        </span>{' '}
+                        ou até{' '}
+                        <span className="font-bold text-yellow-300">
+                          12x de R$ 61,18
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <p className="text-xs font-bold tracking-wide text-yellow-300 drop-shadow-md pt-1 lg:text-sm">
+                    💬 Essa condição nunca mais será repetida.
                   </p>
                 </div>
               </div>
