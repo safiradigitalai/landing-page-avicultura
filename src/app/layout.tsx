@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'LandingPro - Crie Landing Pages Profissionais',
+  title: 'Ave Caipira em Foco',
   description:
     'Transforme suas ideias em landing pages profissionais que convertem. Nossa plataforma oferece templates modernos, otimização automática e analytics detalhados.',
   keywords: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pt_BR',
     url: 'https://landingpro.exemplo.com',
-    title: 'LandingPro - Crie Landing Pages Profissionais',
+    title: 'Ave Caipira em Foco',
     description:
       'Transforme suas ideias em landing pages profissionais que convertem.',
     siteName: 'LandingPro',
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LandingPro - Crie Landing Pages Profissionais',
+    title: 'Ave Caipira em Foco',
     description:
       'Transforme suas ideias em landing pages profissionais que convertem.',
     images: ['/og-image.png'],
